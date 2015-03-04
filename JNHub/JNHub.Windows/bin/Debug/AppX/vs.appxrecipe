@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>SPIRALLER</Machine>
+    <WindowsUser>Adheus Rangel</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>55857Adheus.JovemNerdHub</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Adheus\Documents\Visual Studio 2013\Projects\JNHub\JNHub\JNHub.Windows\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>E535E08A0BFFCB7793F5F59FC6D432F1A2F0CC1AD4D0AED41144344A9EF47D91</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>55857Adheus.JovemNerdHub_1.1.0.1_neutral__fkz6s1jfzxh1t</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>55857Adheus.JovemNerdHub_fkz6s1jfzxh1t!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>55857Adheus.JovemNerdHub</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=F580CD61-BBA0-4015-A0D5-52539F200158</RegisteredPackagePublisher>
+    <RegisteredVersion>1.1.0.1</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Adheus\Documents\Visual Studio 2013\Projects\JNHub\JNHub\JNHub.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-02T06:54:34.686</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2013\Projects\JNHub\JNHub\JNHub.Windows\bin\Debug\JNHub.Windows.exe">
+      <PackagePath>JNHub.Windows.exe</PackagePath>
+      <Modified>2015-03-02T06:54:34.500</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2013\Projects\JNHub\packages\Newtonsoft.Json.6.0.6\lib\netcore45\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2015-03-02T04:04:23.052</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2013\Projects\JNHub\packages\YoutubeExtractor.0.10.6\lib\portable-wp8+wpa81+win8+monoandroid+monotouch\YoutubeExtractor.dll">
+      <PackagePath>YoutubeExtractor.dll</PackagePath>
+      <Modified>2015-03-02T04:04:23.142</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2013\Projects\JNHub\JNHub\JNHub.Windows\Assets\about_bg.png">
+      <PackagePath>Assets\about_bg.png</PackagePath>
+      <Modified>2015-03-02T05:26:34.057</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2013\Projects\JNHub\JNHub\JNHub.Windows\Assets\jovemnerd.png">
+      <PackagePath>Assets\jovemnerd.png</PackagePath>
+      <Modified>2015-01-25T07:30:43.737</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2013\Projects\JNHub\JNHub\JNHub.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-25T08:31:47.302</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2013\Projects\JNHub\JNHub\JNHub.Windows\Assets\adheus_logo.png">
+      <PackagePath>Assets\adheus_logo.png</PackagePath>
+      <Modified>2015-03-02T05:13:50.443</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2013\Projects\JNHub\JNHub\JNHub.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-25T08:25:21.439</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2013\Projects\JNHub\JNHub\JNHub.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-02T06:25:47.146</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2013\Projects\JNHub\JNHub\JNHub.Windows\Assets\Square310x310Logo.scale-100.png">
+      <PackagePath>Assets\Square310x310Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-25T08:23:07.940</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2013\Projects\JNHub\JNHub\JNHub.Windows\Assets\Square70x70Logo.scale-100.png">
+      <PackagePath>Assets\Square70x70Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-25T08:24:40.285</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2013\Projects\JNHub\JNHub\JNHub.Windows\Assets\Square70x70Logo.scale-180.png">
+      <PackagePath>Assets\Square70x70Logo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-25T08:29:08.599</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2013\Projects\JNHub\JNHub\JNHub.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-25T08:24:58.056</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2013\Projects\JNHub\JNHub\JNHub.Windows\Assets\StoreLogo.scale-140.png">
+      <PackagePath>Assets\StoreLogo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-25T08:24:40.285</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2013\Projects\JNHub\JNHub\JNHub.Windows\Assets\StoreLogo.scale-180.png">
+      <PackagePath>Assets\StoreLogo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-25T08:27:13.453</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2013\Projects\JNHub\JNHub\JNHub.Windows\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-25T08:20:57.381</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2013\Projects\JNHub\JNHub\JNHub.Windows\Assets\banner.jpg">
+      <PackagePath>Assets\banner.jpg</PackagePath>
+      <Modified>2015-01-25T07:40:31.130</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2013\Projects\JNHub\JNHub\JNHub.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-01-24T03:36:40.812</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2013\Projects\JNHub\JNHub\JNHub.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2015-03-02T06:54:34.158</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2013\Projects\JNHub\JNHub\JNHub.Windows\bin\Debug\Pages\CategoryPage.xbf">
+      <PackagePath>Pages\CategoryPage.xbf</PackagePath>
+      <Modified>2015-03-02T06:54:34.162</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2013\Projects\JNHub\JNHub\JNHub.Windows\bin\Debug\Pages\VideoPage.xbf">
+      <PackagePath>Pages\VideoPage.xbf</PackagePath>
+      <Modified>2015-03-02T06:54:34.164</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2013\Projects\JNHub\JNHub\JNHub.Windows\bin\Debug\Pages\PodcastPage.xbf">
+      <PackagePath>Pages\PodcastPage.xbf</PackagePath>
+      <Modified>2015-03-02T06:54:34.164</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2013\Projects\JNHub\JNHub\JNHub.Windows\bin\Debug\Pages\WebVideoPage.xbf">
+      <PackagePath>Pages\WebVideoPage.xbf</PackagePath>
+      <Modified>2015-03-02T06:54:34.175</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2013\Projects\JNHub\JNHub\JNHub.Windows\bin\Debug\JNHub.Windows.xr.xml">
+      <PackagePath>JNHub.Windows.xr.xml</PackagePath>
+      <Modified>2015-03-02T05:37:31.054</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2013\Projects\JNHub\JNHub\JNHub.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-03-02T06:54:34.583</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

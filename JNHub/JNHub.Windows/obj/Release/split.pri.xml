@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="55857Adheus.JovemNerdHub" version="1.0" primary="true">
+		<Qualifiers>
+			<Scale>100</Scale>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="App.xbf" uri="ms-resource://55857Adheus.JovemNerdHub/Files/App.xbf">
+				<Candidate type="Path">
+					<Value>App.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="JNHub.Windows.xr.xml" uri="ms-resource://55857Adheus.JovemNerdHub/Files/JNHub.Windows.xr.xml">
+				<Candidate type="Path">
+					<Value>JNHub.Windows.xr.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MainPage.xbf" uri="ms-resource://55857Adheus.JovemNerdHub/Files/MainPage.xbf">
+				<Candidate type="Path">
+					<Value>MainPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="Assets">
+				<NamedResource name="about_bg.png" uri="ms-resource://55857Adheus.JovemNerdHub/Files/Assets/about_bg.png">
+					<Candidate type="Path">
+						<Value>Assets\about_bg.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="adheus_logo.png" uri="ms-resource://55857Adheus.JovemNerdHub/Files/Assets/adheus_logo.png">
+					<Candidate type="Path">
+						<Value>Assets\adheus_logo.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="banner.jpg" uri="ms-resource://55857Adheus.JovemNerdHub/Files/Assets/banner.jpg">
+					<Candidate type="Path">
+						<Value>Assets\banner.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="jovemnerd.png" uri="ms-resource://55857Adheus.JovemNerdHub/Files/Assets/jovemnerd.png">
+					<Candidate type="Path">
+						<Value>Assets\jovemnerd.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Logo.png" uri="ms-resource://55857Adheus.JovemNerdHub/Files/Assets/Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SmallLogo.png" uri="ms-resource://55857Adheus.JovemNerdHub/Files/Assets/SmallLogo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\SmallLogo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreen.png" uri="ms-resource://55857Adheus.JovemNerdHub/Files/Assets/SplashScreen.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\SplashScreen.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square310x310Logo.png" uri="ms-resource://55857Adheus.JovemNerdHub/Files/Assets/Square310x310Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\Square310x310Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square70x70Logo.png" uri="ms-resource://55857Adheus.JovemNerdHub/Files/Assets/Square70x70Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\Square70x70Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://55857Adheus.JovemNerdHub/Files/Assets/StoreLogo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\StoreLogo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://55857Adheus.JovemNerdHub/Files/Assets/Wide310x150Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\Wide310x150Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Pages">
+				<NamedResource name="CategoryPage.xbf" uri="ms-resource://55857Adheus.JovemNerdHub/Files/Pages/CategoryPage.xbf">
+					<Candidate type="Path">
+						<Value>Pages\CategoryPage.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="PodcastPage.xbf" uri="ms-resource://55857Adheus.JovemNerdHub/Files/Pages/PodcastPage.xbf">
+					<Candidate type="Path">
+						<Value>Pages\PodcastPage.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="VideoPage.xbf" uri="ms-resource://55857Adheus.JovemNerdHub/Files/Pages/VideoPage.xbf">
+					<Candidate type="Path">
+						<Value>Pages\VideoPage.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WebVideoPage.xbf" uri="ms-resource://55857Adheus.JovemNerdHub/Files/Pages/WebVideoPage.xbf">
+					<Candidate type="Path">
+						<Value>Pages\WebVideoPage.xbf</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>
