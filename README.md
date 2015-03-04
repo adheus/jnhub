@@ -1,4 +1,4 @@
-# jnhub
+# Jovem Nerd Hub
 Aplicativo Jovem Nerd Hub para Windows e Windows Phone
 
 Este aplicativo é um hub de todas as mídias do site Jovem Nerd.
