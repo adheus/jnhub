@@ -63,11 +63,30 @@ namespace JNHub.Pages
 
 
             Window.Current.SizeChanged += Current_SizeChanged;
+            Current_SizeChanged(this, null);
+
         }
 
         void Current_SizeChanged(object sender, Windows.UI.Core.WindowSizeChangedEventArgs e)
         {
-            //change from column to row on the future
+
+            var bounds = Window.Current.Bounds;
+            double width = bounds.Width;
+            double height = bounds.Height;
+
+            var newHeight = (height - 300);
+            var newWidth = (newHeight * 720) / 480;
+            if(newWidth > width)
+            {
+                newWidth = width;
+                newHeight = (newWidth * 480) / 720;
+            }
+
+            this.videoContainer.Width = newWidth;
+            this.mediaElement.Width = newWidth;
+            this.mediaElement.Height = newHeight;
+
+            
         }
 
         /// <summary>
@@ -147,8 +166,7 @@ namespace JNHub.Pages
                 string videoURL = jnItem.VideoURL;
                 if (!videoURL.Contains("http"))
                     videoURL = "http:" + videoURL;
-                //videoURL = videoURL.Replace("https", "http");
-                if(videoURL.Contains("?"))
+                if(!videoURL.Contains("?v=") && videoURL.Contains("?"))
                     videoURL = videoURL.Substring(0, videoURL.IndexOf('?'));
                 IEnumerable<VideoInfo> videoInfos = DownloadUrlResolver.GetDownloadUrls(videoURL);
 

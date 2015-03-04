@@ -128,6 +128,10 @@
 
             </HubSection>
 
+            <HubSection x:Name="NerdologiaSection" Width="960" Background="Black" Header="{Binding CategoryName}" IsHeaderInteractive="True" ContentTemplate="{StaticResource  BasicSectionTemplate}" >
+
+            </HubSection>
+
             <HubSection x:Name="MRGSection" Width="960" Background="Black" Header="{Binding CategoryName}" IsHeaderInteractive="True" ContentTemplate="{StaticResource  BasicSectionTemplate}" >
 
 

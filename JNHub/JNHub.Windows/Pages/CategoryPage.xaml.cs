@@ -1,9 +1,11 @@
 ﻿using JNHub.Common;
+using JNHub.JN;
 using JNHub.Shared;
 using JNHub.Shared.RSSReader;
 using JNHub.Utils;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -29,7 +31,8 @@ namespace JNHub.Pages
 
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
-
+        private List<JNItem> categoryItems;
+        private List<SectionItemData> currentList;
         private WaitViewProvider waitView;
         /// <summary>
         /// This can be changed to a strongly typed view model.
@@ -78,23 +81,30 @@ namespace JNHub.Pages
 
             switch(this.pageTitle.Text)
             {
-                case "Nerdcast":
-                    this.itemsGridView.ItemsSource = SectionItemData.FromJNItemList(await JNRSSReader.GetNerdcastFeed());
+                case "NERDCAST":
+                    categoryItems =  await JNRSSReader.GetNerdcastFeed();
                     break;
-                case "NerdOffice":
-                    this.itemsGridView.ItemsSource = SectionItemData.FromJNItemList(await JNRSSReader.GetNerdOfficeFeed());
+                case "NERDOFFICE":
+                    categoryItems =  await JNRSSReader.GetNerdOfficeFeed();
                     break;
-                case "NerdPlayer":
-                    this.itemsGridView.ItemsSource = SectionItemData.FromJNItemList(await JNRSSReader.GetNerdPlayerFeed());
+                case "NERDPLAYER":
+                    categoryItems =  await JNRSSReader.GetNerdPlayerFeed();
                     break;
-                case "Matando Robôs Gigantes":
-                    this.itemsGridView.ItemsSource = SectionItemData.FromJNItemList(await JNRSSReader.GetMRGsFeed());
+                case "NERDOLOGIA":
+                    categoryItems =  await JNRSSReader.GetNerdologiaFeed();
                     break;
-                case "MRG Show":
-                    this.itemsGridView.ItemsSource = SectionItemData.FromJNItemList(await JNRSSReader.GetMainMRGShows());
+                case "MATANDO ROBÔS GIGANTES":
+                    categoryItems =  await JNRSSReader.GetMRGsFeed();
                     break;
-            }
+                case "MRG SHOW":
+                    categoryItems =  await JNRSSReader.GetMRGShowsFeed();
+                    break;
 
+
+
+            }
+            currentList = SectionItemData.FromJNItemList(categoryItems);
+            this.itemsGridView.ItemsSource = currentList;
             waitView.Remove();
         }
 
@@ -143,6 +153,35 @@ namespace JNHub.Pages
             else if (sectionItemData.JNItem.isVideo)
             {
                 this.Frame.Navigate(typeof(Pages.VideoPage), sectionItemData.JNItem);
+            }
+        }
+
+        private void searchBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            var culture = CultureInfo.CurrentCulture;
+            string searchTerm = searchBox.Text;
+            if (searchTerm.Length >= 3)
+            {
+                currentList = SectionItemData.FromJNItemList(categoryItems.Where(i => culture.CompareInfo.IndexOf(i.Title, searchTerm, CompareOptions.IgnoreCase) >= 0 || culture.CompareInfo.IndexOf(i.Description, searchTerm, CompareOptions.IgnoreCase) >= 0).ToList());
+                if (currentList.Count == 0)
+                {
+                    this.noItemsMessage.Visibility = Visibility.Visible;
+                    this.itemsGridView.Visibility = Visibility.Collapsed;
+                }
+                else
+                {
+                    
+                    this.itemsGridView.ItemsSource = currentList;
+                    this.noItemsMessage.Visibility = Visibility.Collapsed;
+                    this.itemsGridView.Visibility = Visibility.Visible;
+                }
+            }
+            else if (currentList.Count < categoryItems.Count)
+            {
+                currentList = SectionItemData.FromJNItemList(categoryItems);
+                this.itemsGridView.ItemsSource = currentList;
+                this.noItemsMessage.Visibility = Visibility.Collapsed;
+                this.itemsGridView.Visibility = Visibility.Visible;
             }
         }
     }

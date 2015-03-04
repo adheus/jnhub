@@ -17,7 +17,9 @@ namespace JNHub.Shared.RSSReader
         private const string NERDCAST_FEED_URL = @"http://jovemnerd.com.br/categoria/nerdcast/feed/";
         private const string NERDOFFICE_FEED_URL = @"http://jovemnerd.com.br/categoria/nerdoffice/feed/";
         private const string NERDPLAYER_FEED_URL = @"http://jovemnerd.com.br/categoria/nerdplayer/feed/";
+        private const string NERDOLOGIA_FEED_URL = @"http://gdata.youtube.com/feeds/api/users/nerdologia/uploads";
         private const string MRG_FEED_URL = @"http://jovemnerd.com.br/categoria/matando-robos-gigantes/feed/";
+        private const string MRG_SHOW_FEED_URL = @"http://gdata.youtube.com/feeds/api/users/matandorobosgigantes/uploads";
 
         private static JNRSSReader instance;
 
@@ -33,7 +35,9 @@ namespace JNHub.Shared.RSSReader
         private List<JNItem> lastFetchedNerdcastJNItems = new List<JNItem>();
         private List<JNItem> lastFetchedNerdOfficeJNItems = new List<JNItem>();
         private List<JNItem> lastFetchedNerdPlayerJNItems = new List<JNItem>();
+        private List<JNItem> lastFetchedNerdologiaJNItems = new List<JNItem>();
         private List<JNItem> lastFetchedMRGJNItems = new List<JNItem>();
+        private List<JNItem> lastFetchedMRGShowJNItems = new List<JNItem>();
 
 
         private JNRSSReader()
@@ -105,6 +109,14 @@ namespace JNHub.Shared.RSSReader
             
             return getInstance().lastFetchedNerdPlayerJNItems;
         }
+
+        public async static Task<List<JNItem>> GetNerdologiaFeed()
+        {
+            if (getInstance().lastFetchedNerdologiaJNItems.Count == 0)
+                getInstance().lastFetchedNerdologiaJNItems = (await getInstance().update(NERDOLOGIA_FEED_URL, getInstance().lastFetchedNerdologiaJNItems));
+
+            return getInstance().lastFetchedNerdologiaJNItems;
+        }
         
         public async static Task<List<JNItem>> GetMRGsFeed()
         {
@@ -116,10 +128,10 @@ namespace JNHub.Shared.RSSReader
 
         public async static Task<List<JNItem>> GetMRGShowsFeed()
         {
-            if (getInstance().lastFetchedMRGJNItems.Count == 0)
-                getInstance().lastFetchedMRGJNItems = (await getInstance().update(MRG_FEED_URL, getInstance().lastFetchedMRGJNItems));
-            
-            return getInstance().lastFetchedMRGJNItems.Where(j => j.Categories.Contains("Show")).ToList();;
+            if (getInstance().lastFetchedMRGShowJNItems.Count == 0)
+                getInstance().lastFetchedMRGShowJNItems = (await getInstance().update(MRG_SHOW_FEED_URL, getInstance().lastFetchedMRGShowJNItems));
+
+            return getInstance().lastFetchedMRGShowJNItems.ToList(); ;
         }
 
 
@@ -138,7 +150,9 @@ namespace JNHub.Shared.RSSReader
                 
                 XElement rss = XElement.Parse(xmlString);
                 var channel = rss.Element("channel");
-                var xmlItems = channel.Elements("item");
+                IEnumerable<XElement> xmlItems = null;
+                if(channel != null)
+                     xmlItems = channel.Elements("item");
 
                 jnItems.Clear();
 
@@ -147,18 +161,35 @@ namespace JNHub.Shared.RSSReader
                 {
                     JNItem jnItem = new JNItem();
                     jnItem.Title = item.Title.Text;
-                    jnItem.HTMLDescription = item.Summary.Text;
+                    if (item.Summary != null)
+                        jnItem.HTMLDescription = item.Summary.Text;
+                    else if (item.Content != null)
+                    {
+                        jnItem.HTMLDescription = item.Content.Text;
+                        jnItem.setCustomDescription(item.Content.Text);
+                    }
+                    
 
-
-                    var xmlItem = xmlItems.ElementAt(index);
-                    index++;
-                    XNamespace content = "http://purl.org/rss/1.0/modules/content/";
-                    var contentEncoded = xmlItem.Descendants(content + "encoded");
-                    if (contentEncoded.FirstOrDefault() != null)
-                        jnItem.ContentEncoded = contentEncoded.FirstOrDefault().Value;
-
+                    if (xmlItems != null)
+                    {
+                        var xmlItem = xmlItems.ElementAt(index);
+                        index++;
+                        XNamespace content = "http://purl.org/rss/1.0/modules/content/";
+                        var contentEncoded = xmlItem.Descendants(content + "encoded");
+                        if (contentEncoded.FirstOrDefault() != null)
+                            jnItem.ContentEncoded = contentEncoded.FirstOrDefault().Value;
+                    }
 
                     var enclosure = item.Links.Where(l => l.Relationship.Equals("enclosure", StringComparison.OrdinalIgnoreCase)).FirstOrDefault();
+
+                    var alternate = item.Links.Where(l => l.Relationship.Equals("alternate", StringComparison.OrdinalIgnoreCase)).FirstOrDefault();
+
+                    if(alternate != null)
+                    {
+                        var videoURL = alternate.Uri.AbsoluteUri;
+                        jnItem.setCustomVideoURL(videoURL);
+                    }
+
                     if (enclosure != null)
                     {
                         var podcastItem = new PodcastItem();

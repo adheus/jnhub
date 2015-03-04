@@ -12,10 +12,10 @@
     mc:Ignorable="d">
 
     <Page.Resources>
-        <SolidColorBrush x:Key="YellowColor">#FEC92F</SolidColorBrush>
+        <SolidColorBrush x:Key="SubTitleColor">#00A1A9</SolidColorBrush>
 
         <Style x:Key="YellowTextBlock" TargetType="TextBlock">
-            <Setter Property="Foreground" Value="{StaticResource YellowColor}" />
+            <Setter Property="Foreground" Value="{StaticResource SubTitleColor}" />
             <Setter Property="FontSize" Value="12" />
         </Style>
         <DataTemplate x:Key="SectionHeadlineItemTemplate">
@@ -64,8 +64,8 @@
         * Row 0 contains the back button and page title
         * Row 1 contains the rest of the page layout
     -->
-    <Grid Name="rootGrid">
-        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Name="rootGrid" Background="#DDD">
+        <Grid >
             <Grid.ChildrenTransitions>
                 <TransitionCollection>
                     <EntranceThemeTransition/>
@@ -77,10 +77,11 @@
             </Grid.RowDefinitions>
 
             <!-- Back button and page title -->
-            <Grid>
+            <Grid Background="#00A1A9">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="120"/>
                     <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="280" />
                 </Grid.ColumnDefinitions>
                 <Button x:Name="backButton" Margin="39,59,39,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
                         Style="{StaticResource NavigationBackButtonNormalStyle}"
@@ -90,17 +91,22 @@
                         AutomationProperties.ItemType="Navigation Button"/>
                 <TextBlock x:Name="pageTitle" Text="..." Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
+                
+                <TextBox x:Name="searchBox" Grid.Column="2" PlaceholderText="Pesquisar" Height="30" Margin="20,67,20,41" TextChanged="searchBox_TextChanged" />
             </Grid>
-            <utils:VariableSizeGridView x:Name="itemsGridView" Margin="39,0,0,0" Grid.Row="1"  SelectionMode="None" IsItemClickEnabled="True" ItemTemplateSelector="{StaticResource sectionItemDataTemplateSelector}" ItemsSource="{Binding Items}" ItemClick="itemsGridView_ItemClick" >
-                <utils:VariableSizeGridView.ItemsPanel>
-                    <ItemsPanelTemplate>
-                        <VariableSizedWrapGrid Margin="0,0,0,0" 
-                                                   ItemHeight="156" 
-                                                   ItemWidth="292" 
-                                                   Orientation="Vertical" />
-                    </ItemsPanelTemplate>
-                </utils:VariableSizeGridView.ItemsPanel>
-            </utils:VariableSizeGridView>
+            <Grid Grid.Row="1" VerticalAlignment="Center">
+                <utils:VariableSizeGridView x:Name="itemsGridView" Margin="39,0,0,0" Grid.Row="1"  SelectionMode="None" IsItemClickEnabled="True" ItemTemplateSelector="{StaticResource sectionItemDataTemplateSelector}" ItemsSource="{Binding Items}" ItemClick="itemsGridView_ItemClick" >
+                    <utils:VariableSizeGridView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <VariableSizedWrapGrid Margin="0,0,0,0" 
+                                                       ItemHeight="156" 
+                                                       ItemWidth="292" 
+                                                       Orientation="Vertical" />
+                        </ItemsPanelTemplate>
+                    </utils:VariableSizeGridView.ItemsPanel>
+                </utils:VariableSizeGridView>
+                <TextBlock Name="noItemsMessage" TextAlignment="Center" Text="Nenhum item encontrado." FontSize="18" FontFamily="Segoe UI" FontWeight="SemiLight" Visibility="Collapsed" Margin="0,0,0,100" Foreground="#333" />
+            </Grid>
         </Grid>
     </Grid>
 </Page>

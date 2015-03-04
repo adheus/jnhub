@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="55857Adheus.JovemNerdHub" Publisher="CN=F580CD61-BBA0-4015-A0D5-52539F200158" Version="1.1.0.1" />
+  <Identity Name="55857Adheus.JovemNerdHub" Publisher="CN=F580CD61-BBA0-4015-A0D5-52539F200158" Version="1.1.0.2" />
   <Properties>
     <DisplayName>Jovem Nerd Hub</DisplayName>
     <PublisherDisplayName>Adheus</PublisherDisplayName>
@@ -15,7 +15,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="JNHub.Windows.App">
-      <m2:VisualElements DisplayName="Jovem Nerd Hub" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="Hub para conteúdos do site www.jovemnerd.com.br" ForegroundText="light" BackgroundColor="#222222" ToastCapable="false">
+      <m2:VisualElements DisplayName="Jovem Nerd Hub" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="Hub para conteúdos do site www.jovemnerd.com.br" ForegroundText="dark" BackgroundColor="#DDDDDD" ToastCapable="false">
         <m2:DefaultTile Square310x310Logo="Assets\Square310x310Logo.png" Wide310x150Logo="Assets\Wide310x150Logo.png" Square70x70Logo="Assets\Square70x70Logo.png" ShortName="Hub">
           <m2:ShowNameOnTiles>
             <m2:ShowOn Tile="square150x150Logo" />
@@ -23,7 +23,7 @@
             <m2:ShowOn Tile="square310x310Logo" />
           </m2:ShowNameOnTiles>
         </m2:DefaultTile>
-        <m2:SplashScreen Image="Assets\SplashScreen.png" />
+        <m2:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#DDDDDD" />
         <m2:ApplicationView MinWidth="width320" />
       </m2:VisualElements>
       <Extensions>

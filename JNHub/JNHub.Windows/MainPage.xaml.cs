@@ -43,9 +43,6 @@ namespace JNHub
 
         void Current_SizeChanged(object sender, Windows.UI.Core.WindowSizeChangedEventArgs e)
         {
-            double width = e.Size.Width;
-            double height = e.Size.Height;
-
             // Obtain the orientation - Landscape or Portait
             string CurrentViewState = ApplicationView.GetForCurrentView().Orientation.ToString();
 
@@ -81,23 +78,27 @@ namespace JNHub
 
                 var nerdcasts = (await JNRSSReader.GetMainNerdcasts());
                 int shouldGetLength = limit >= nerdcasts.Count ? nerdcasts.Count : limit;
-                NerdcastSection.DataContext = new HubBasicSectionContent("Nerdcast", nerdcasts.GetRange(0, shouldGetLength));
+                NerdcastSection.DataContext = new HubBasicSectionContent("NERDCAST", nerdcasts.GetRange(0, shouldGetLength));
 
                 var nerdoffices = (await JNRSSReader.GetMainNerdOffices());
                 shouldGetLength = limit >= nerdoffices.Count ? nerdoffices.Count : limit;
-                NerdOfficeSection.DataContext = new HubBasicSectionContent("NerdOffice", nerdoffices.GetRange(0, shouldGetLength));
+                NerdOfficeSection.DataContext = new HubBasicSectionContent("NERDOFFICE", nerdoffices.GetRange(0, shouldGetLength));
 
                 var nerdplayers = (await JNRSSReader.GetMainNerdPlayers());
                 shouldGetLength = limit >= nerdplayers.Count ? nerdplayers.Count : limit;
-                NerdPlayerSection.DataContext = new HubBasicSectionContent("NerdPlayer", nerdplayers.GetRange(0, shouldGetLength));
+                NerdPlayerSection.DataContext = new HubBasicSectionContent("NERDPLAYER", nerdplayers.GetRange(0, shouldGetLength));
+
+                var nerdologias = (await JNRSSReader.GetNerdologiaFeed());
+                shouldGetLength = limit >= nerdologias.Count ? nerdologias.Count : limit;
+                NerdologiaSection.DataContext = new HubBasicSectionContent("NERDOLOGIA", nerdologias.GetRange(0, shouldGetLength));
 
                 var mrgs = (await JNRSSReader.GetMainMRGs());
                 shouldGetLength = limit >= mrgs.Count ? mrgs.Count : limit;
-                MRGSection.DataContext = new HubBasicSectionContent("Matando Robôs Gigantes", mrgs.GetRange(0, shouldGetLength));
+                MRGSection.DataContext = new HubBasicSectionContent("MATANDO ROBÔS GIGANTES", mrgs.GetRange(0, shouldGetLength));
 
-                var mrgsShow = (await JNRSSReader.GetMainMRGShows());
+                var mrgsShow = (await JNRSSReader.GetMRGShowsFeed());
                 shouldGetLength = limit >= mrgsShow.Count ? mrgsShow.Count : limit;
-                MRGShowSection.DataContext = new HubBasicSectionContent("MRG Show", mrgsShow.GetRange(0, shouldGetLength));
+                MRGShowSection.DataContext = new HubBasicSectionContent("MRG SHOW", mrgsShow.GetRange(0, shouldGetLength));
 
             }
             catch

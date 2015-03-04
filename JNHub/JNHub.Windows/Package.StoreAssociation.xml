@@ -354,5 +354,23 @@
     </ReservedNames>
   </ProductReservedInfo>
   <AccountPackageIdentityNames />
-  <PackageInfoList LandingUrl="https://appdev.microsoft.com:443/StorePortals/Developer/Catalog/ReleaseAnchor/69bd46f0-0c18-4f3f-8a79-e4a9d62d068c" />
+  <PackageInfoList LandingUrl="https://appdev.microsoft.com:443/StorePortals/Developer/Catalog/ReleaseAnchor/69bd46f0-0c18-4f3f-8a79-e4a9d62d068c">
+    <BundleInfo>
+      <PackageInfo>
+        <OsMinVersion>6.3.0.0</OsMinVersion>
+        <PackageArchitecture>Neutral</PackageArchitecture>
+        <PackageMaxArchitectureVersion>1.1.0.1</PackageMaxArchitectureVersion>
+      </PackageInfo>
+      <PackageInfo>
+        <OsMinVersion>6.3.0.0</OsMinVersion>
+        <PackageArchitecture>Neutral</PackageArchitecture>
+        <PackageMaxArchitectureVersion>1.1.0.1</PackageMaxArchitectureVersion>
+      </PackageInfo>
+      <PackageInfo>
+        <OsMinVersion>6.3.0.0</OsMinVersion>
+        <PackageArchitecture>Neutral</PackageArchitecture>
+        <PackageMaxArchitectureVersion>1.1.0.1</PackageMaxArchitectureVersion>
+      </PackageInfo>
+    </BundleInfo>
+  </PackageInfoList>
 </StoreAssociation>

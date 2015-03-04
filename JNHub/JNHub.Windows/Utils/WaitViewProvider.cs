@@ -21,7 +21,7 @@ namespace JNHub.Utils
             this.rootGrid = rootGrid;
 
             wait = new ProgressRing();
-            wait.Foreground = new SolidColorBrush(Windows.UI.Color.FromArgb(255, 200, 200, 200));
+            wait.Foreground = new SolidColorBrush(Windows.UI.Color.FromArgb(255, 0, 161, 169));
             wait.MinWidth = 80;
             wait.MinHeight = 80;
             label = new TextBlock();
@@ -30,7 +30,7 @@ namespace JNHub.Utils
             label.VerticalAlignment = VerticalAlignment.Center;
             label.Foreground = new SolidColorBrush(Windows.UI.Color.FromArgb(255, 50, 50, 50));
             fadedBackground = new StackPanel();
-            fadedBackground.Background = new SolidColorBrush(Windows.UI.Color.FromArgb(200, 0, 0, 0));
+            fadedBackground.Background = new SolidColorBrush(Windows.UI.Color.FromArgb(100, 255, 255, 255));
             fadedBackground.Width = this.rootGrid.Width;
             fadedBackground.Height = this.rootGrid.Height;
 

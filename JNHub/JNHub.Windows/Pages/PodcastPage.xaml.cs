@@ -96,7 +96,11 @@ namespace JNHub.Pages
             double absvalue = Math.Round(
                  musicPlayer.NaturalDuration.TimeSpan.TotalSeconds,
                 MidpointRounding.AwayFromZero);
-         
+
+            systemControls.DisplayUpdater.Type = MediaPlaybackType.Music;
+
+            systemControls.DisplayUpdater.MusicProperties.Title = jnItem.Title;
+            systemControls.DisplayUpdater.Update();
 
             waitView.Remove();
 
@@ -113,6 +117,7 @@ namespace JNHub.Pages
             // Register to handle the following system transpot control buttons.
             systemControls.IsPlayEnabled = true;
             systemControls.IsPauseEnabled = true;
+
         }
 
 
@@ -159,6 +164,7 @@ namespace JNHub.Pages
         /// serializable state.</param>
         private void navigationHelper_SaveState(object sender, SaveStateEventArgs e)
         {
+
         }
 
         #region NavigationHelper registration
@@ -175,11 +181,19 @@ namespace JNHub.Pages
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             navigationHelper.OnNavigatedTo(e);
+
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
+            this.musicPlayer.Stop();
+            systemControls.IsPlayEnabled = false;
+            systemControls.IsPauseEnabled = false;
+            systemControls.DisplayUpdater.ClearAll();
+            systemControls.ButtonPressed -= SystemControls_ButtonPressed;
+            systemControls.DisplayUpdater.Update();
             navigationHelper.OnNavigatedFrom(e);
+            
         }
 
         #endregion

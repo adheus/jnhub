@@ -11,8 +11,9 @@
     mc:Ignorable="d">
 
     <Page.Resources>
-        <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
-        <x:String x:Key="AppName">My Application</x:String>
+        <SolidColorBrush x:Key="PageBackground">#DDD</SolidColorBrush>
+        <SolidColorBrush x:Key="TitleColor">#00A1A9</SolidColorBrush>
+        <SolidColorBrush x:Key="TextColor">#333</SolidColorBrush>
     </Page.Resources>
 
     <!--
@@ -20,22 +21,22 @@
         * Row 0 contains the back button and page title
         * Row 1 contains the rest of the page layout
     -->
-    <Grid Name="rootGrid">
+    <Grid Name="rootGrid" Background="{StaticResource PageBackground}">
         <Grid.ChildrenTransitions>
             <TransitionCollection>
                 <EntranceThemeTransition/>
             </TransitionCollection>
         </Grid.ChildrenTransitions>
-        <Grid.Background>
-            <ImageBrush x:Name="headerImage" Stretch="UniformToFill" />
-        </Grid.Background>
 
-        <Grid Background="#DE000000" >
+        <Grid>
+            <Grid.Background>
+                <ImageBrush x:Name="headerImage" Stretch="UniformToFill" Opacity="0.06" />
+            </Grid.Background>
             <Grid.RowDefinitions>
                 <RowDefinition Height="140"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Grid x:Name="titleGrid">
+            <Grid x:Name="titleGrid" Background="{StaticResource TitleColor}">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="120"/>
                     <ColumnDefinition Width="*"/>
@@ -51,18 +52,16 @@
                 <TextBlock x:Name="pageTitle" Text="..." Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                             IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
             </Grid>
-            <Grid Grid.Row="1" Margin="40,0,40,0">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <Grid VerticalAlignment="Top">
-                    <MediaElement Name="mediaElement" AreTransportControlsEnabled="True" MediaOpened="mediaElement_MediaOpened" MediaFailed="mediaElement_MediaFailed" Margin="40,20,40,80" />
+            <ScrollViewer Grid.Row="1">
+                <Grid Name="videoContainer" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                     <MediaElement Name="mediaElement" AreTransportControlsEnabled="True" MediaOpened="mediaElement_MediaOpened" MediaFailed="mediaElement_MediaFailed" Margin="0,40,0,0"/>
+                    <TextBlock Name="description" Grid.Row="1" TextWrapping="Wrap" FontSize="16" Margin="0,40,0,60" Foreground="{StaticResource TextColor}" />
                 </Grid>
-                <ScrollViewer Grid.Column="1" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Margin="40,0,40,10">
-                    <TextBlock Name="description" TextWrapping="Wrap" FontSize="16" />
-                </ScrollViewer>
-            </Grid>
+            </ScrollViewer>
         </Grid>
     </Grid>
 </Page>

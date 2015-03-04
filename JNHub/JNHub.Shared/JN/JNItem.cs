@@ -18,6 +18,9 @@ namespace JNHub.JN
 
         public PodcastItem Podcast { get; set; }
 
+        private string customDescription;
+        private string customVideoURL;
+
         public bool isPodcast
         {
             get
@@ -38,6 +41,9 @@ namespace JNHub.JN
         {
             get
             {
+                if (customVideoURL != null)
+                    return true;
+
                 if(ContentEncoded != null)
                     return ContentEncoded.Contains("<iframe");
 
@@ -45,20 +51,33 @@ namespace JNHub.JN
             }
         }
 
+        public void setCustomDescription(String customDescription)
+        {
+            this.customDescription = customDescription;
+        }
+
+        public void setCustomVideoURL(String customVideoURL)
+        {
+            this.customVideoURL = customVideoURL;
+        }
+
         public string VideoURL
         {
             get
             {
-                if (isVideo)
+                if (customVideoURL == null)
                 {
-                    string iframePrefix = "<iframe";
-                    int iframeIndex = ContentEncoded.IndexOf(iframePrefix);
-                    string imageSourcePrefix = "src=\"";
-                    int index = ContentEncoded.Substring(iframeIndex).IndexOf(imageSourcePrefix) + iframeIndex;
-                    int lastIndex = ContentEncoded.Substring(index + imageSourcePrefix.Length).IndexOf("\"");
-                    return ContentEncoded.Substring(index + imageSourcePrefix.Length, lastIndex);
+                    if (isVideo)
+                    {
+                        string iframePrefix = "<iframe";
+                        int iframeIndex = ContentEncoded.IndexOf(iframePrefix);
+                        string imageSourcePrefix = "src=\"";
+                        int index = ContentEncoded.Substring(iframeIndex).IndexOf(imageSourcePrefix) + iframeIndex;
+                        int lastIndex = ContentEncoded.Substring(index + imageSourcePrefix.Length).IndexOf("\"");
+                        customVideoURL = ContentEncoded.Substring(index + imageSourcePrefix.Length, lastIndex);
+                    }
                 }
-                return null;
+                return customVideoURL;
             }
         }
 
@@ -66,15 +85,26 @@ namespace JNHub.JN
         {
             get
             {
+                
                 if(VideoURL != null)
                 {
+
                     string youTubeEmbedPrefix = "www.youtube.com/embed/";
+                    if (!VideoURL.Contains(youTubeEmbedPrefix))
+                        youTubeEmbedPrefix = "www.youtube.com/watch?v=";
+                        
                     int initIndex = VideoURL.IndexOf(youTubeEmbedPrefix) + youTubeEmbedPrefix.Length;
                     int finishedIndex = VideoURL.Substring(initIndex).IndexOf("?");
-                    if(finishedIndex > 0)
+                    if (finishedIndex > 0)
                         return VideoURL.Substring(initIndex, finishedIndex);
                     else
+                    {
+                        finishedIndex = VideoURL.Substring(initIndex).IndexOf("&");
+                        if (finishedIndex > 0)
+                            return VideoURL.Substring(initIndex, finishedIndex);
+                        
                         return VideoURL.Substring(initIndex);
+                    }
                 }
                 return null;
             }
@@ -84,7 +114,9 @@ namespace JNHub.JN
         {
             get
             {
-                return HtmlUtilities.ConvertToText(HTMLDescription);
+                if(customDescription == null)
+                    return HtmlUtilities.ConvertToText(HTMLDescription);
+                return customDescription;
             }
         }
 
