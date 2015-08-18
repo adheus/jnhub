@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Roots >
+<Roots xmlns="clr-namespace:Microsoft.Xaml.Tools.XamlCompiler.RootLog;assembly=Microsoft.Windows.UI.Xaml.81.Build.Tasks">
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="Items" />
     <RootPropertyPathName Name="Image" />
@@ -81,6 +81,7 @@
       <RootProperty Name="IsHeaderInteractive" />
       <RootProperty Name="ContentTemplate" />
       <RootProperty Name="Style" />
+      <RootProperty Name="Visibility" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
       <RootProperty Name="HorizontalAlignment" />

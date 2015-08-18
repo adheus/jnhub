@@ -87,18 +87,18 @@ namespace JNHub
                 var nerdplayers = (await JNRSSReader.GetMainNerdPlayers());
                 shouldGetLength = limit >= nerdplayers.Count ? nerdplayers.Count : limit;
                 NerdPlayerSection.DataContext = new HubBasicSectionContent("NERDPLAYER", nerdplayers.GetRange(0, shouldGetLength));
-
+                /*
                 var nerdologias = (await JNRSSReader.GetNerdologiaFeed());
                 shouldGetLength = limit >= nerdologias.Count ? nerdologias.Count : limit;
-                NerdologiaSection.DataContext = new HubBasicSectionContent("NERDOLOGIA", nerdologias.GetRange(0, shouldGetLength));
+                NerdologiaSection.DataContext = new HubBasicSectionContent("NERDOLOGIA", nerdologias.GetRange(0, shouldGetLength));*/
 
                 var mrgs = (await JNRSSReader.GetMainMRGs());
                 shouldGetLength = limit >= mrgs.Count ? mrgs.Count : limit;
                 MRGSection.DataContext = new HubBasicSectionContent("MATANDO ROBÔS GIGANTES", mrgs.GetRange(0, shouldGetLength));
-
+                /*
                 var mrgsShow = (await JNRSSReader.GetMRGShowsFeed());
                 shouldGetLength = limit >= mrgsShow.Count ? mrgsShow.Count : limit;
-                MRGShowSection.DataContext = new HubBasicSectionContent("MRG SHOW", mrgsShow.GetRange(0, shouldGetLength));
+                MRGShowSection.DataContext = new HubBasicSectionContent("MRG SHOW", mrgsShow.GetRange(0, shouldGetLength));*/
 
             }
             catch

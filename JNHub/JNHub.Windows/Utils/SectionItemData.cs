@@ -21,9 +21,11 @@ namespace JNHub.Utils
         {
             get
             {
-                if(JNItem.ImageURL != null)
+                if (JNItem.ImageURL != null)
                     return new BitmapImage(new Uri(JNItem.ImageURL, UriKind.Absolute));
-                return null;
+                else
+                    return new BitmapImage(new Uri("ms-appx:///Assets/img_placeholder.jpg"));
+                //return null;
             }
         }
         public int Size { get; set; }

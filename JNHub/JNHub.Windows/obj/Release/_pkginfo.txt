@@ -1,1 +1,1 @@
-C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\AppPackages\JNHub.Windows_1.1.0.2_Test\JNHub.Windows_1.1.0.2_AnyCPU.appxbundle
+Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\AppPackages\JNHub.Windows_1.1.1.1_Test\JNHub.Windows_1.1.1.1_AnyCPU.appxbundle

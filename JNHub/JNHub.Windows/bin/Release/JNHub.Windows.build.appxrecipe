@@ -2,103 +2,108 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Machine>SPIRALLER</Machine>
-    <WindowsUser>Adheus Rangel</WindowsUser>
+    <WindowsUser>Adheus</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
     <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>55857Adheus.JovemNerdHub</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\obj\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\obj\Release\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\bin\Release\AppxManifest.xml">
+    <AppXManifest Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\bin\Release\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\bin\Release\JNHub.Windows.exe">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\bin\Release\JNHub.Windows.exe">
       <PackagePath>JNHub.Windows.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\packages\Newtonsoft.Json.6.0.6\lib\netcore45\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\packages\Newtonsoft.Json.7.0.1\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\packages\YoutubeExtractor.0.10.6\lib\portable-wp8+wpa81+win8+monoandroid+monotouch\YoutubeExtractor.dll">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\packages\YoutubeExtractor.0.10.6\lib\portable-wp8+wpa81+win8+monoandroid+monotouch\YoutubeExtractor.dll">
       <PackagePath>YoutubeExtractor.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\about_bg.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\about_bg.png">
       <PackagePath>Assets\about_bg.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\jovemnerd.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\jovemnerd.png">
       <PackagePath>Assets\jovemnerd.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\adheus_logo.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\adheus_logo.png">
       <PackagePath>Assets\adheus_logo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\Square310x310Logo.scale-100.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\Square310x310Logo.scale-100.png">
       <PackagePath>Assets\Square310x310Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\Square70x70Logo.scale-100.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\Square70x70Logo.scale-100.png">
       <PackagePath>Assets\Square70x70Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\Square70x70Logo.scale-180.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\Square70x70Logo.scale-180.png">
       <PackagePath>Assets\Square70x70Logo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\StoreLogo.scale-140.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\StoreLogo.scale-140.png">
       <PackagePath>Assets\StoreLogo.scale-140.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\StoreLogo.scale-180.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\StoreLogo.scale-180.png">
       <PackagePath>Assets\StoreLogo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\banner.jpg">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\banner.jpg">
       <PackagePath>Assets\banner.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\bin\Release\App.xbf">
-      <PackagePath>App.xbf</PackagePath>
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\Assets\img_placeholder.jpg">
+      <PackagePath>Assets\img_placeholder.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\bin\Release\MainPage.xbf">
-      <PackagePath>MainPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\bin\Release\Pages\CategoryPage.xbf">
-      <PackagePath>Pages\CategoryPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\bin\Release\Pages\VideoPage.xbf">
-      <PackagePath>Pages\VideoPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\bin\Release\Pages\PodcastPage.xbf">
-      <PackagePath>Pages\PodcastPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\bin\Release\Pages\WebVideoPage.xbf">
-      <PackagePath>Pages\WebVideoPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\bin\Release\JNHub.Windows.xr.xml">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\bin\Release\JNHub.Windows.xr.xml">
       <PackagePath>JNHub.Windows.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\bin\Release\resources.pri">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\bin\Release\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\bin\Release\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\bin\Release\Pages\CategoryPage.xbf">
+      <PackagePath>Pages\CategoryPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\bin\Release\Pages\VideoPage.xbf">
+      <PackagePath>Pages\VideoPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\bin\Release\Pages\PodcastPage.xbf">
+      <PackagePath>Pages\PodcastPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\bin\Release\Pages\WebVideoPage.xbf">
+      <PackagePath>Pages\WebVideoPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\bin\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

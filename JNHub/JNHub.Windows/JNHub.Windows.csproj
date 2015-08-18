@@ -143,6 +143,7 @@
   <ItemGroup>
     <Content Include="Assets\about_bg.png" />
     <Content Include="Assets\banner.jpg" />
+    <Content Include="Assets\img_placeholder.jpg" />
     <Content Include="Assets\jovemnerd.png" />
     <Content Include="Assets\Logo.scale-100.png" />
     <Content Include="Assets\adheus_logo.png" />
@@ -180,8 +181,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\packages\Newtonsoft.Json.6.0.6\lib\netcore45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.7.0.1\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="YoutubeExtractor">
       <HintPath>..\..\packages\YoutubeExtractor.0.10.6\lib\portable-wp8+wpa81+win8+monoandroid+monotouch\YoutubeExtractor.dll</HintPath>

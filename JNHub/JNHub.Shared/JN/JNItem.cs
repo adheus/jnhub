@@ -151,7 +151,7 @@ namespace JNHub.JN
                   return YOUTUBE_DEFAULT_THUMBNAIL_URL.Replace("{YOUTUBE_VIDEO_ID}", YoutubeID);
               }
 
-              return null;
+                return null;
             }
         }
     }

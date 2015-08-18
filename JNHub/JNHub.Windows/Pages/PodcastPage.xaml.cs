@@ -80,8 +80,8 @@ namespace JNHub.Pages
 
             this.pageTitle.Text = jnItem.Title;
             this.description.Text = jnItem.Description;
-
-            headerImage.ImageSource = new BitmapImage(new Uri(jnItem.ImageURL, UriKind.Absolute));
+            if (jnItem.ImageURL != null)
+                headerImage.ImageSource = new BitmapImage(new Uri(jnItem.ImageURL, UriKind.Absolute));
 
             Uri uri = new Uri(jnItem.Podcast.FileURL, UriKind.Absolute);
             musicPlayer.Source = uri;

@@ -36,6 +36,11 @@
 						<Value>Assets\banner.jpg</Value>
 					</Candidate>
 				</NamedResource>
+				<NamedResource name="img_placeholder.jpg" uri="ms-resource://55857Adheus.JovemNerdHub/Files/Assets/img_placeholder.jpg">
+					<Candidate type="Path">
+						<Value>Assets\img_placeholder.jpg</Value>
+					</Candidate>
+				</NamedResource>
 				<NamedResource name="jovemnerd.png" uri="ms-resource://55857Adheus.JovemNerdHub/Files/Assets/jovemnerd.png">
 					<Candidate type="Path">
 						<Value>Assets\jovemnerd.png</Value>

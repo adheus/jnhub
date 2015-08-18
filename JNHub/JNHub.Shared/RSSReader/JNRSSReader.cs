@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
@@ -70,7 +71,7 @@ namespace JNHub.Shared.RSSReader
 
         public static async Task<List<JNItem>> GetMainMRGs()
         {
-            return (await GetMainFeed()).Where(i => i.Categories.Contains("Matando Robôs Gigantes") && !i.Categories.Contains("Show")).ToList();
+            return (await GetMainFeed()).Where(i => i.Categories.Contains("Matando Robôs Gigantes")).ToList();
         }
 
         public static async Task<List<JNItem>> GetMainMRGShows()
@@ -122,8 +123,8 @@ namespace JNHub.Shared.RSSReader
         {
             if (getInstance().lastFetchedMRGJNItems.Count == 0)
                 getInstance().lastFetchedMRGJNItems = (await getInstance().update(MRG_FEED_URL, getInstance().lastFetchedMRGJNItems));
-            
-            return getInstance().lastFetchedMRGJNItems.Where(j => !j.Categories.Contains("Show")).ToList(); ;
+
+            return getInstance().lastFetchedMRGJNItems;
         }
 
         public async static Task<List<JNItem>> GetMRGShowsFeed()
@@ -143,8 +144,10 @@ namespace JNHub.Shared.RSSReader
             {
                 var httpResponse = await httpClient.GetAsync(feedUri);
 
-                var xmlString = await httpResponse.Content.ReadAsStringAsync();
+                var buffer = await httpResponse.Content.ReadAsBufferAsync();
 
+                var xmlString = Encoding.UTF8.GetString(buffer.ToArray(), 0, (int)(buffer.Length - 1));
+                xmlString = xmlString.Replace((char)0x1B, ' ');
                 SyndicationFeed feed = new SyndicationFeed();
                 feed.Load(xmlString);
                 
@@ -210,10 +213,10 @@ namespace JNHub.Shared.RSSReader
             }
             catch(Exception e) 
             {
+                System.Diagnostics.Debug.WriteLine(e.Message);
                 System.Diagnostics.Debug.WriteLine(e.StackTrace);
             }
             return jnItems;
         }
-
     }
 }

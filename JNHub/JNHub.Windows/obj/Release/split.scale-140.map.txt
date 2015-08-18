@@ -3,5 +3,5 @@
 "ResourceDimensions"		"scale-140"
 
 [Files]
-"C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\obj\Release\split.scale-140.pri"			"resources.pri"
-"C:\Users\Adheus\Documents\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\obj\Release\PackageLayout\Assets\StoreLogo.scale-140.png"			"Assets\StoreLogo.scale-140.png"
+"Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\obj\Release\split.scale-140.pri"			"resources.pri"
+"Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\obj\Release\PackageLayout\Assets\StoreLogo.scale-140.png"			"Assets\StoreLogo.scale-140.png"

@@ -225,18 +225,18 @@
 
             <HubSection x:Name="NerdPlayerSection" Width="960" Header="{Binding CategoryName}" IsHeaderInteractive="True" ContentTemplate="{StaticResource  BasicSectionTemplate}" Background="{StaticResource HubSectionBackgroundA}" Style="{StaticResource HubSectionStyle}"/>
 
-            <HubSection x:Name="NerdologiaSection" Width="960" Header="{Binding CategoryName}" IsHeaderInteractive="True" ContentTemplate="{StaticResource  BasicSectionTemplate}"  Background="{StaticResource HubSectionBackgroundB}" Style="{StaticResource HubSectionStyle}" />
+            <HubSection x:Name="NerdologiaSection" Width="960" Visibility="Collapsed" Header="{Binding CategoryName}" IsHeaderInteractive="True" ContentTemplate="{StaticResource  BasicSectionTemplate}"  Background="{StaticResource HubSectionBackgroundB}" Style="{StaticResource HubSectionStyle}" />
 
-            <HubSection x:Name="MRGSection" Width="960" Header="{Binding CategoryName}" IsHeaderInteractive="True" ContentTemplate="{StaticResource  BasicSectionTemplate}" Background="{StaticResource HubSectionBackgroundA}" Style="{StaticResource HubSectionStyle}"/>
+            <HubSection x:Name="MRGSection" Width="960" Header="{Binding CategoryName}" IsHeaderInteractive="True" ContentTemplate="{StaticResource  BasicSectionTemplate}" Background="{StaticResource HubSectionBackgroundB}" Style="{StaticResource HubSectionStyle}"/>
 
-            <HubSection x:Name="MRGShowSection" Width="960" Header="{Binding CategoryName}" IsHeaderInteractive="True" ContentTemplate="{StaticResource  BasicSectionTemplate}" Background="{StaticResource HubSectionBackgroundB}" Style="{StaticResource HubSectionStyle}" />
+            <HubSection x:Name="MRGShowSection" Width="960" Visibility="Collapsed" Header="{Binding CategoryName}" IsHeaderInteractive="True" ContentTemplate="{StaticResource  BasicSectionTemplate}" Background="{StaticResource HubSectionBackgroundB}" Style="{StaticResource HubSectionStyle}" />
 
 
             <HubSection x:Name="AboutSection" Width="300" IsHeaderInteractive="False" Background="{StaticResource HubSectionBackgroundA}" >
                 <DataTemplate>
                     <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Vertical">
                         <Image Source="Assets/adheus_logo.png" Margin="10,0,10,0" />
-                        <TextBlock Text="versão 1.1.0" TextAlignment="Center" Margin="0,20,0,20" Style="{StaticResource AboutTextBlock}" Foreground="#333"/>
+                        <TextBlock Text="versão 1.1.1" TextAlignment="Center" Margin="0,20,0,20" Style="{StaticResource AboutTextBlock}" Foreground="#333"/>
                         <Button x:ConnectionId='4' Content="termos de uso" HorizontalAlignment="Center" Style="{StaticResource TextBlockButtonStyle}"                        Foreground="#333" />
                         <Button x:ConnectionId='5' Content="www.adheus.com" Margin="0,40,0,40" HorizontalAlignment="Center" Style="{StaticResource TextBlockButtonStyle}"                  Foreground="#333"/>
                     </StackPanel>

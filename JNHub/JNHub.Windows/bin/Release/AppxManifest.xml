@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="55857Adheus.JovemNerdHub" Publisher="CN=F580CD61-BBA0-4015-A0D5-52539F200158" Version="1.1.0.2" ProcessorArchitecture="neutral" />
+  <Identity Name="55857Adheus.JovemNerdHub" Publisher="CN=F580CD61-BBA0-4015-A0D5-52539F200158" Version="1.1.1.1" ProcessorArchitecture="neutral" />
   <Properties>
     <DisplayName>Jovem Nerd Hub</DisplayName>
     <PublisherDisplayName>Adheus</PublisherDisplayName>
@@ -49,12 +49,12 @@
     <build:Item Name="SharedGUID" Value="c16d49ed-09e7-4f95-ae48-019b681559ff" />
     <build:Item Name="CodeSharingProject" Value="248F659F-DAC5-46E8-AC09-60EC9FC95053" />
     <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v4.5.1" />
-    <build:Item Name="VisualStudio" Version="12.0" />
-    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2013" />
-    <build:Item Name="OperatingSystem" Version="6.3.9600.16384 (winblue_rtm.130821-1623)" />
-    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="12.0.31101.0" />
+    <build:Item Name="VisualStudio" Version="14.0" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2015" />
+    <build:Item Name="OperatingSystem" Version="10.0.10240.16384 (th1.150709-1700)" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.23121.0" />
     <build:Item Name="ProjectGUID" Value="{EECD66EF-08B1-47D0-A61B-5794B35EC27E}" />
-    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="12.0.30501.0" />
-    <build:Item Name="MakePri.exe" Version="6.3.9600.17298 (winblue.141024-1500)" />
+    <build:Item Name="Microsoft.Windows.UI.Xaml.81.Build.Tasks.dll" Version="14.0.22705.1" />
+    <build:Item Name="MakePri.exe" Version="6.3.9600.17336 (winblue.150226-1500)" />
   </build:Metadata>
 </Package>
