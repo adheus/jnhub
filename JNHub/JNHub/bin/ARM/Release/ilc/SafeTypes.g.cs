@@ -3332,6 +3332,56 @@ namespace Windows.Foundation.Diagnostics
 	}
 }
 
+namespace Windows.Foundation.Metadata
+{
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class ApiInformation : global::System.__ComObject
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		public static bool IsTypePresent(string typeName)
+		{
+			bool retval;
+			retval = __Factory_Windows_Foundation_Metadata__IApiInformationStatics_IsTypePresent(
+								"Windows.Foundation.Metadata.ApiInformation", 
+								typeName
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return retval;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		static bool __Factory_Windows_Foundation_Metadata__IApiInformationStatics_IsTypePresent(
+					string typeName_1, 
+					string typeName)
+		{
+			bool __pRetVal;
+			__pRetVal = global::Windows.Foundation.Metadata.IApiInformationStatics__Impl.StubClass.IsTypePresent(
+								global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
+													typeName_1, 
+													typeof(global::Windows.Foundation.Metadata.IApiInformationStatics).TypeHandle
+												), 
+								typeName
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __pRetVal;
+		}
+
+		public ApiInformation(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IApiInformationStatics
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		bool IsTypePresent(string typeName);
+	}
+}
+
 namespace Windows.Globalization
 {
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Globalization.ICalendar))]
@@ -4581,6 +4631,16 @@ namespace Windows.Networking.Connectivity
 	}
 }
 
+namespace Windows.Phone
+{
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe struct PhoneContract
+	{
+	}
+}
+
 namespace Windows.Security.Credentials
 {
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Security.Credentials.IPasswordCredential))]
@@ -5804,6 +5864,50 @@ namespace Windows.UI
 			return __pRetVal;
 		}
 
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Transparent")]
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		public static global::Windows.UI.Color get_Transparent()
+		{
+			global::Windows.UI.Color retval;
+			retval = __Factory_Windows_UI__IColorsStatics_get_Transparent("Windows.UI.Colors");
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return retval;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		static global::Windows.UI.Color __Factory_Windows_UI__IColorsStatics_get_Transparent(string typeName)
+		{
+			global::Windows.UI.Color __pRetVal;
+			__pRetVal = global::Windows.UI.IColorsStatics__Impl.StubClass.get_Transparent(global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
+									typeName, 
+									typeof(global::Windows.UI.IColorsStatics).TypeHandle
+								));
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __pRetVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "White")]
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		public static global::Windows.UI.Color get_White()
+		{
+			global::Windows.UI.Color retval;
+			retval = __Factory_Windows_UI__IColorsStatics_get_White("Windows.UI.Colors");
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return retval;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		static global::Windows.UI.Color __Factory_Windows_UI__IColorsStatics_get_White(string typeName)
+		{
+			global::Windows.UI.Color __pRetVal;
+			__pRetVal = global::Windows.UI.IColorsStatics__Impl.StubClass.get_White(global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
+									typeName, 
+									typeof(global::Windows.UI.IColorsStatics).TypeHandle
+								));
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __pRetVal;
+		}
+
 		public Colors(global::System.IntPtr dummy)
 		{
 		}
@@ -5816,6 +5920,14 @@ namespace Windows.UI
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "DarkCyan")]
 		global::Windows.UI.Color get_DarkCyan();
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Transparent")]
+		global::Windows.UI.Color get_Transparent();
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "White")]
+		global::Windows.UI.Color get_White();
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -6536,15 +6648,6 @@ namespace Windows.UI.ViewManagement
 	public unsafe sealed class ApplicationView : global::System.__ComObject, global::Windows.UI.ViewManagement.IApplicationView, global::Windows.UI.ViewManagement.IApplicationView2, global::Windows.UI.ViewManagement.IApplicationView3
 	{
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Orientation")]
-		public global::Windows.UI.ViewManagement.ApplicationViewOrientation get_Orientation()
-		{
-			global::Windows.UI.ViewManagement.ApplicationViewOrientation __retVal = global::Windows.UI.ViewManagement.IApplicationView__Impl.StubClass.get_Orientation(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Title")]
 		public void put_Title(string value)
 		{
@@ -6641,6 +6744,71 @@ namespace Windows.UI.ViewManagement
 		}
 	}
 
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.ViewManagement.IStatusBar))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class StatusBar : global::System.__ComObject, global::Windows.UI.ViewManagement.IStatusBar
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "BackgroundOpacity")]
+		public void put_BackgroundOpacity(double value)
+		{
+			global::Windows.UI.ViewManagement.IStatusBar__Impl.StubClass.put_BackgroundOpacity(
+								this, 
+								value
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ForegroundColor")]
+		public void put_ForegroundColor(global::System.Nullable<global::Windows.UI.Color> value)
+		{
+			global::Windows.UI.ViewManagement.IStatusBar__Impl.StubClass.put_ForegroundColor(
+								this, 
+								value
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "BackgroundColor")]
+		public void put_BackgroundColor(global::System.Nullable<global::Windows.UI.Color> value)
+		{
+			global::Windows.UI.ViewManagement.IStatusBar__Impl.StubClass.put_BackgroundColor(
+								this, 
+								value
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		public static global::Windows.UI.ViewManagement.StatusBar GetForCurrentView()
+		{
+			global::Windows.UI.ViewManagement.StatusBar retval;
+			retval = __Factory_Windows_UI_ViewManagement__IStatusBarStatics_GetForCurrentView("Windows.UI.ViewManagement.StatusBar");
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return retval;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		static global::Windows.UI.ViewManagement.StatusBar __Factory_Windows_UI_ViewManagement__IStatusBarStatics_GetForCurrentView(string typeName)
+		{
+			global::Windows.UI.ViewManagement.StatusBar __pRetVal;
+			__pRetVal = global::Windows.UI.ViewManagement.IStatusBarStatics__Impl.StubClass.GetForCurrentView(global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
+									typeName, 
+									typeof(global::Windows.UI.ViewManagement.IStatusBarStatics).TypeHandle
+								));
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __pRetVal;
+		}
+
+		public StatusBar(global::System.IntPtr dummy)
+		{
+		}
+	}
+
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IApplicationViewStatics2
@@ -6653,10 +6821,6 @@ namespace Windows.UI.ViewManagement
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IApplicationView
 	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Orientation")]
-		global::Windows.UI.ViewManagement.ApplicationViewOrientation get_Orientation();
-
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Title")]
 		void put_Title(string value);
@@ -6697,13 +6861,29 @@ namespace Windows.UI.ViewManagement
 		void put_ButtonBackgroundColor(global::System.Nullable<global::Windows.UI.Color> value);
 	}
 
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public enum ApplicationViewOrientation
+	public unsafe interface IStatusBarStatics
 	{
-		Landscape = 0,
-		Portrait = 1,
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		global::Windows.UI.ViewManagement.StatusBar GetForCurrentView();
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IStatusBar
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "BackgroundOpacity")]
+		void put_BackgroundOpacity(double value);
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ForegroundColor")]
+		void put_ForegroundColor(global::System.Nullable<global::Windows.UI.Color> value);
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "BackgroundColor")]
+		void put_BackgroundColor(global::System.Nullable<global::Windows.UI.Color> value);
 	}
 }
 
@@ -7458,26 +7638,6 @@ namespace Windows.UI.Xaml
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe class UIElement : global::Windows.UI.Xaml.DependencyObject, global::Windows.UI.Xaml.IUIElement, global::Windows.UI.Xaml.IUIElementOverrides, global::Windows.UI.Xaml.IUIElement2, global::Windows.UI.Xaml.IUIElement3
 	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Opacity")]
-		public virtual double get_Opacity()
-		{
-			double __retVal = global::Windows.UI.Xaml.IUIElement__Impl.StubClass.get_Opacity(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Opacity")]
-		public virtual void put_Opacity(double value)
-		{
-			global::Windows.UI.Xaml.IUIElement__Impl.StubClass.put_Opacity(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IsHitTestVisible")]
 		public virtual bool get_IsHitTestVisible()
@@ -8242,48 +8402,27 @@ namespace Windows.UI.Xaml
 		}
 	}
 
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class Style : global::Windows.UI.Xaml.DependencyObject, global::Windows.UI.Xaml.IStyle
+	{
+		public Style(global::System.IntPtr dummy) : 
+				base(dummy)
+		{
+		}
+	}
+
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.IFrameworkElement))]
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.IFrameworkElementOverrides))]
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.IFrameworkElement2))]
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.IFrameworkElementOverrides2))]
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.IFrameworkElement3))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe class FrameworkElement : global::Windows.UI.Xaml.UIElement, global::Windows.UI.Xaml.IFrameworkElement, global::Windows.UI.Xaml.IFrameworkElementOverrides, global::Windows.UI.Xaml.IFrameworkElement2, global::Windows.UI.Xaml.IFrameworkElementOverrides2, global::Windows.UI.Xaml.IFrameworkElement3
 	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
-		protected FrameworkElement() : 
-				base(default(global::System.IntPtr))
-		{
-			global::System.IntPtr retval;
-			retval = __Factory_Windows_UI_Xaml__IFrameworkElementFactory_CreateInstance("Windows.UI.Xaml.FrameworkElement");
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			this.__AttachAndRelease(retval);
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::System.IntPtr __Factory_Windows_UI_Xaml__IFrameworkElementFactory_CreateInstance(string typeName)
-		{
-			global::System.IntPtr innerInspectable;
-			global::System.IntPtr outerInspectable = default(global::System.IntPtr);
-			outerInspectable = global::System.Runtime.InteropServices.McgMarshal.GetOuterIInspectableForManagedObject(this);
-			global::System.IntPtr __pRetVal_WithAggregation;
-			__pRetVal_WithAggregation = global::Windows.UI.Xaml.IFrameworkElementFactory__Impl.StubClass.CreateInstance(
-								global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
-													typeName, 
-													typeof(global::Windows.UI.Xaml.IFrameworkElementFactory).TypeHandle
-												), 
-								outerInspectable, 
-								out innerInspectable
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(outerInspectable);
-			global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(__pRetVal_WithAggregation);
-			return innerInspectable;
-		}
-
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Resources")]
 		public virtual global::Windows.UI.Xaml.ResourceDictionary get_Resources()
@@ -8298,26 +8437,6 @@ namespace Windows.UI.Xaml
 		public virtual void put_Resources(global::Windows.UI.Xaml.ResourceDictionary value)
 		{
 			global::Windows.UI.Xaml.IFrameworkElement__Impl.StubClass.put_Resources(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Tag")]
-		public virtual object get_Tag()
-		{
-			object __retVal = global::Windows.UI.Xaml.IFrameworkElement__Impl.StubClass.get_Tag(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Tag")]
-		public virtual void put_Tag(object value)
-		{
-			global::Windows.UI.Xaml.IFrameworkElement__Impl.StubClass.put_Tag(
 								this, 
 								value
 							);
@@ -8792,17 +8911,6 @@ namespace Windows.UI.Xaml
 		}
 	}
 
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class Style : global::Windows.UI.Xaml.DependencyObject, global::Windows.UI.Xaml.IStyle
-	{
-		public Style(global::System.IntPtr dummy) : 
-				base(dummy)
-		{
-		}
-	}
-
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
@@ -8827,10 +8935,9 @@ namespace Windows.UI.Xaml
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe class FrameworkTemplate : global::Windows.UI.Xaml.DependencyObject, global::Windows.UI.Xaml.IFrameworkTemplate
+	public unsafe sealed class DependencyPropertyChangedEventArgs : global::System.__ComObject, global::Windows.UI.Xaml.IDependencyPropertyChangedEventArgs
 	{
-		public FrameworkTemplate(global::System.IntPtr dummy) : 
-				base(dummy)
+		public DependencyPropertyChangedEventArgs(global::System.IntPtr dummy)
 		{
 		}
 	}
@@ -8838,9 +8945,10 @@ namespace Windows.UI.Xaml
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class DependencyPropertyChangedEventArgs : global::System.__ComObject, global::Windows.UI.Xaml.IDependencyPropertyChangedEventArgs
+	public unsafe class FrameworkTemplate : global::Windows.UI.Xaml.DependencyObject, global::Windows.UI.Xaml.IFrameworkTemplate
 	{
-		public DependencyPropertyChangedEventArgs(global::System.IntPtr dummy)
+		public FrameworkTemplate(global::System.IntPtr dummy) : 
+				base(dummy)
 		{
 		}
 	}
@@ -8990,260 +9098,6 @@ namespace Windows.UI.Xaml
 		}
 
 		public Setter(global::System.IntPtr dummy) : 
-				base(dummy)
-		{
-		}
-	}
-
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.IVisualStateGroup))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class VisualStateGroup : global::Windows.UI.Xaml.DependencyObject, global::Windows.UI.Xaml.IVisualStateGroup
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
-		public VisualStateGroup() : 
-				base(default(global::System.IntPtr))
-		{
-			global::System.IntPtr retval;
-			retval = global::System.Runtime.InteropServices.McgModuleManager.ActivateInstance("Windows.UI.Xaml.VisualStateGroup");
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			this.__AttachAndRelease(retval);
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "States")]
-		public global::System.Collections.Generic.IList<global::Windows.UI.Xaml.VisualState> get_States()
-		{
-			global::System.Collections.Generic.IList<global::Windows.UI.Xaml.VisualState> __retVal = global::Windows.UI.Xaml.IVisualStateGroup__Impl.StubClass.get_States(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "CurrentStateChanged")]
-		public global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_CurrentStateChanged(global::Windows.UI.Xaml.VisualStateChangedEventHandler value)
-		{
-			global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __retVal = global::Windows.UI.Xaml.IVisualStateGroup__Impl.StubClass.add_CurrentStateChanged(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "CurrentStateChanged")]
-		public void remove_CurrentStateChanged(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
-		{
-			global::Windows.UI.Xaml.IVisualStateGroup__Impl.StubClass.remove_CurrentStateChanged(
-								this, 
-								token
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "CurrentStateChanging")]
-		public global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_CurrentStateChanging(global::Windows.UI.Xaml.VisualStateChangedEventHandler value)
-		{
-			global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __retVal = global::Windows.UI.Xaml.IVisualStateGroup__Impl.StubClass.add_CurrentStateChanging(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "CurrentStateChanging")]
-		public void remove_CurrentStateChanging(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
-		{
-			global::Windows.UI.Xaml.IVisualStateGroup__Impl.StubClass.remove_CurrentStateChanging(
-								this, 
-								token
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		public VisualStateGroup(global::System.IntPtr dummy) : 
-				base(dummy)
-		{
-		}
-	}
-
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.IVisualState))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class VisualState : global::Windows.UI.Xaml.DependencyObject, global::Windows.UI.Xaml.IVisualState, global::Windows.UI.Xaml.IVisualState2
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
-		public VisualState() : 
-				base(default(global::System.IntPtr))
-		{
-			global::System.IntPtr retval;
-			retval = global::System.Runtime.InteropServices.McgModuleManager.ActivateInstance("Windows.UI.Xaml.VisualState");
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			this.__AttachAndRelease(retval);
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Storyboard")]
-		public global::Windows.UI.Xaml.Media.Animation.Storyboard get_Storyboard()
-		{
-			global::Windows.UI.Xaml.Media.Animation.Storyboard __retVal = global::Windows.UI.Xaml.IVisualState__Impl.StubClass.get_Storyboard(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Storyboard")]
-		public void put_Storyboard(global::Windows.UI.Xaml.Media.Animation.Storyboard value)
-		{
-			global::Windows.UI.Xaml.IVisualState__Impl.StubClass.put_Storyboard(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		public VisualState(global::System.IntPtr dummy) : 
-				base(dummy)
-		{
-		}
-	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class VisualStateChangedEventArgs : global::System.__ComObject, global::Windows.UI.Xaml.IVisualStateChangedEventArgs
-	{
-		public VisualStateChangedEventArgs(global::System.IntPtr dummy)
-		{
-		}
-	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe class VisualStateManager : global::Windows.UI.Xaml.DependencyObject, global::Windows.UI.Xaml.IVisualStateManager, global::Windows.UI.Xaml.IVisualStateManagerOverrides, global::Windows.UI.Xaml.IVisualStateManagerProtected
-	{
-		bool global::Windows.UI.Xaml.IVisualStateManagerOverrides.GoToStateCore(
-					global::Windows.UI.Xaml.Controls.Control control, 
-					global::Windows.UI.Xaml.FrameworkElement templateRoot, 
-					string stateName, 
-					global::Windows.UI.Xaml.VisualStateGroup group, 
-					global::Windows.UI.Xaml.VisualState state, 
-					bool useTransitions)
-		{
-			bool __retVal = this.GoToStateCore(
-								control, 
-								templateRoot, 
-								stateName, 
-								group, 
-								state, 
-								useTransitions
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		protected virtual bool GoToStateCore(
-					global::Windows.UI.Xaml.Controls.Control control, 
-					global::Windows.UI.Xaml.FrameworkElement templateRoot, 
-					string stateName, 
-					global::Windows.UI.Xaml.VisualStateGroup group, 
-					global::Windows.UI.Xaml.VisualState state, 
-					bool useTransitions)
-		{
-			global::McgInterop.McgHelpers.FailFastForReducedMethod();
-			return default(bool);
-		}
-
-		void global::Windows.UI.Xaml.IVisualStateManagerProtected.RaiseCurrentStateChanging(
-					global::Windows.UI.Xaml.VisualStateGroup stateGroup, 
-					global::Windows.UI.Xaml.VisualState oldState, 
-					global::Windows.UI.Xaml.VisualState newState, 
-					global::Windows.UI.Xaml.Controls.Control control)
-		{
-			this.RaiseCurrentStateChanging(
-								stateGroup, 
-								oldState, 
-								newState, 
-								control
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		protected virtual void RaiseCurrentStateChanging(
-					global::Windows.UI.Xaml.VisualStateGroup stateGroup, 
-					global::Windows.UI.Xaml.VisualState oldState, 
-					global::Windows.UI.Xaml.VisualState newState, 
-					global::Windows.UI.Xaml.Controls.Control control)
-		{
-			global::McgInterop.McgHelpers.FailFastForReducedMethod();
-		}
-
-		void global::Windows.UI.Xaml.IVisualStateManagerProtected.RaiseCurrentStateChanged(
-					global::Windows.UI.Xaml.VisualStateGroup stateGroup, 
-					global::Windows.UI.Xaml.VisualState oldState, 
-					global::Windows.UI.Xaml.VisualState newState, 
-					global::Windows.UI.Xaml.Controls.Control control)
-		{
-			this.RaiseCurrentStateChanged(
-								stateGroup, 
-								oldState, 
-								newState, 
-								control
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		protected virtual void RaiseCurrentStateChanged(
-					global::Windows.UI.Xaml.VisualStateGroup stateGroup, 
-					global::Windows.UI.Xaml.VisualState oldState, 
-					global::Windows.UI.Xaml.VisualState newState, 
-					global::Windows.UI.Xaml.Controls.Control control)
-		{
-			global::McgInterop.McgHelpers.FailFastForReducedMethod();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public static global::System.Collections.Generic.IList<global::Windows.UI.Xaml.VisualStateGroup> GetVisualStateGroups(global::Windows.UI.Xaml.FrameworkElement obj)
-		{
-			global::System.Collections.Generic.IList<global::Windows.UI.Xaml.VisualStateGroup> retval;
-			retval = __Factory_Windows_UI_Xaml__IVisualStateManagerStatics_GetVisualStateGroups(
-								"Windows.UI.Xaml.VisualStateManager", 
-								obj
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return retval;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		static global::System.Collections.Generic.IList<global::Windows.UI.Xaml.VisualStateGroup> __Factory_Windows_UI_Xaml__IVisualStateManagerStatics_GetVisualStateGroups(
-					string typeName, 
-					global::Windows.UI.Xaml.FrameworkElement obj)
-		{
-			global::System.Collections.Generic.IList<global::Windows.UI.Xaml.VisualStateGroup> __pRetVal;
-			__pRetVal = global::Windows.UI.Xaml.IVisualStateManagerStatics__Impl.StubClass.GetVisualStateGroups(
-								global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
-													typeName, 
-													typeof(global::Windows.UI.Xaml.IVisualStateManagerStatics).TypeHandle
-												), 
-								obj
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __pRetVal;
-		}
-
-		public VisualStateManager(global::System.IntPtr dummy) : 
 				base(dummy)
 		{
 		}
@@ -9632,14 +9486,6 @@ namespace Windows.UI.Xaml
 	public unsafe interface IUIElement
 	{
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Opacity")]
-		double get_Opacity();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Opacity")]
-		void put_Opacity(double value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IsHitTestVisible")]
 		bool get_IsHitTestVisible();
 
@@ -9943,12 +9789,8 @@ namespace Windows.UI.Xaml
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IFrameworkElementFactory
+	public unsafe interface IStyle
 	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::System.IntPtr CreateInstance(
-					global::System.IntPtr outer, 
-					out global::System.IntPtr inner);
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -9962,14 +9804,6 @@ namespace Windows.UI.Xaml
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Resources")]
 		void put_Resources(global::Windows.UI.Xaml.ResourceDictionary value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Tag")]
-		object get_Tag();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Tag")]
-		void put_Tag(object value);
 
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ActualWidth")]
@@ -10106,12 +9940,6 @@ namespace Windows.UI.Xaml
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IStyle
-	{
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe delegate void SizeChangedEventHandler(
 				object sender, 
 				global::Windows.UI.Xaml.SizeChangedEventArgs e);
@@ -10180,12 +10008,6 @@ namespace Windows.UI.Xaml
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IFrameworkTemplate
-	{
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe delegate void DependencyPropertyChangedEventHandler(
 				object sender, 
 				global::Windows.UI.Xaml.DependencyPropertyChangedEventArgs e);
@@ -10193,6 +10015,12 @@ namespace Windows.UI.Xaml
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IDependencyPropertyChangedEventArgs
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IFrameworkTemplate
 	{
 	}
 
@@ -10255,109 +10083,6 @@ namespace Windows.UI.Xaml
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface ISetter2
 	{
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IVisualStateGroup
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "States")]
-		global::System.Collections.Generic.IList<global::Windows.UI.Xaml.VisualState> get_States();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "CurrentStateChanged")]
-		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_CurrentStateChanged(global::Windows.UI.Xaml.VisualStateChangedEventHandler value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "CurrentStateChanged")]
-		void remove_CurrentStateChanged(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "CurrentStateChanging")]
-		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_CurrentStateChanging(global::Windows.UI.Xaml.VisualStateChangedEventHandler value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "CurrentStateChanging")]
-		void remove_CurrentStateChanging(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IVisualState
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Storyboard")]
-		global::Windows.UI.Xaml.Media.Animation.Storyboard get_Storyboard();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Storyboard")]
-		void put_Storyboard(global::Windows.UI.Xaml.Media.Animation.Storyboard value);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IVisualState2
-	{
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe delegate void VisualStateChangedEventHandler(
-				object sender, 
-				global::Windows.UI.Xaml.VisualStateChangedEventArgs e);
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IVisualStateChangedEventArgs
-	{
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IVisualStateManagerStatics
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::System.Collections.Generic.IList<global::Windows.UI.Xaml.VisualStateGroup> GetVisualStateGroups(global::Windows.UI.Xaml.FrameworkElement obj);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IVisualStateManager
-	{
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IVisualStateManagerOverrides
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		bool GoToStateCore(
-					global::Windows.UI.Xaml.Controls.Control control, 
-					global::Windows.UI.Xaml.FrameworkElement templateRoot, 
-					string stateName, 
-					global::Windows.UI.Xaml.VisualStateGroup group, 
-					global::Windows.UI.Xaml.VisualState state, 
-					bool useTransitions);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IVisualStateManagerProtected
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void RaiseCurrentStateChanging(
-					global::Windows.UI.Xaml.VisualStateGroup stateGroup, 
-					global::Windows.UI.Xaml.VisualState oldState, 
-					global::Windows.UI.Xaml.VisualState newState, 
-					global::Windows.UI.Xaml.Controls.Control control);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void RaiseCurrentStateChanged(
-					global::Windows.UI.Xaml.VisualStateGroup stateGroup, 
-					global::Windows.UI.Xaml.VisualState oldState, 
-					global::Windows.UI.Xaml.VisualState newState, 
-					global::Windows.UI.Xaml.Controls.Control control);
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -10527,26 +10252,6 @@ namespace Windows.UI.Xaml
 		Justify = 3,
 		DetectFromContent = 4,
 	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public enum TextLineBounds
-	{
-		Full = 0,
-		TrimToCapHeight = 1,
-		TrimToBaseline = 2,
-		Tight = 3,
-	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public enum OpticalMarginAlignment
-	{
-		None = 0,
-		TrimSideBearings = 1,
-	}
 }
 
 namespace Windows.UI.Xaml.Automation
@@ -10556,65 +10261,6 @@ namespace Windows.UI.Xaml.Automation
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe sealed class AutomationProperties : global::System.__ComObject, global::Windows.UI.Xaml.Automation.IAutomationProperties
 	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public static global::Windows.UI.Xaml.Automation.Peers.AccessibilityView GetAccessibilityView(global::Windows.UI.Xaml.DependencyObject element)
-		{
-			global::Windows.UI.Xaml.Automation.Peers.AccessibilityView retval;
-			retval = __Factory_Windows_UI_Xaml_Automation__IAutomationPropertiesStatics2_GetAccessibilityView(
-								"Windows.UI.Xaml.Automation.AutomationProperties", 
-								element
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return retval;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		static global::Windows.UI.Xaml.Automation.Peers.AccessibilityView __Factory_Windows_UI_Xaml_Automation__IAutomationPropertiesStatics2_GetAccessibilityView(
-					string typeName, 
-					global::Windows.UI.Xaml.DependencyObject element)
-		{
-			global::Windows.UI.Xaml.Automation.Peers.AccessibilityView __pRetVal;
-			__pRetVal = global::Windows.UI.Xaml.Automation.IAutomationPropertiesStatics2__Impl.StubClass.GetAccessibilityView(
-								global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
-													typeName, 
-													typeof(global::Windows.UI.Xaml.Automation.IAutomationPropertiesStatics2).TypeHandle
-												), 
-								element
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __pRetVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public static void SetAccessibilityView(
-					global::Windows.UI.Xaml.DependencyObject element, 
-					global::Windows.UI.Xaml.Automation.Peers.AccessibilityView value)
-		{
-			__Factory_Windows_UI_Xaml_Automation__IAutomationPropertiesStatics2_SetAccessibilityView(
-								"Windows.UI.Xaml.Automation.AutomationProperties", 
-								element, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		static void __Factory_Windows_UI_Xaml_Automation__IAutomationPropertiesStatics2_SetAccessibilityView(
-					string typeName, 
-					global::Windows.UI.Xaml.DependencyObject element, 
-					global::Windows.UI.Xaml.Automation.Peers.AccessibilityView value)
-		{
-			global::Windows.UI.Xaml.Automation.IAutomationPropertiesStatics2__Impl.StubClass.SetAccessibilityView(
-								global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
-													typeName, 
-													typeof(global::Windows.UI.Xaml.Automation.IAutomationPropertiesStatics2).TypeHandle
-												), 
-								element, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		public static string GetAutomationId(global::Windows.UI.Xaml.DependencyObject element)
 		{
@@ -10795,19 +10441,6 @@ namespace Windows.UI.Xaml.Automation
 		public AutomationProperties(global::System.IntPtr dummy)
 		{
 		}
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IAutomationPropertiesStatics2
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::Windows.UI.Xaml.Automation.Peers.AccessibilityView GetAccessibilityView(global::Windows.UI.Xaml.DependencyObject element);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void SetAccessibilityView(
-					global::Windows.UI.Xaml.DependencyObject element, 
-					global::Windows.UI.Xaml.Automation.Peers.AccessibilityView value);
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -11797,16 +11430,6 @@ namespace Windows.UI.Xaml.Automation.Peers
 		Navigation = 4,
 		Search = 5,
 	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public enum AccessibilityView
-	{
-		Raw = 0,
-		Control = 1,
-		Content = 2,
-	}
 }
 
 namespace Windows.UI.Xaml.Automation.Provider
@@ -11834,43 +11457,11 @@ namespace Windows.UI.Xaml.Controls
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IControl))]
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IControlOverrides))]
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IControlProtected))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe class Control : global::Windows.UI.Xaml.FrameworkElement, global::Windows.UI.Xaml.Controls.IControl, global::Windows.UI.Xaml.Controls.IControlOverrides, global::Windows.UI.Xaml.Controls.IControlProtected, global::Windows.UI.Xaml.Controls.IControl2, global::Windows.UI.Xaml.Controls.IControl3
 	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
-		protected Control() : 
-				base(default(global::System.IntPtr))
-		{
-			global::System.IntPtr retval;
-			retval = __Factory_Windows_UI_Xaml_Controls__IControlFactory_CreateInstance("Windows.UI.Xaml.Controls.Control");
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			this.__AttachAndRelease(retval);
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::System.IntPtr __Factory_Windows_UI_Xaml_Controls__IControlFactory_CreateInstance(string typeName)
-		{
-			global::System.IntPtr innerInspectable;
-			global::System.IntPtr outerInspectable = default(global::System.IntPtr);
-			outerInspectable = global::System.Runtime.InteropServices.McgMarshal.GetOuterIInspectableForManagedObject(this);
-			global::System.IntPtr __pRetVal_WithAggregation;
-			__pRetVal_WithAggregation = global::Windows.UI.Xaml.Controls.IControlFactory__Impl.StubClass.CreateInstance(
-								global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
-													typeName, 
-													typeof(global::Windows.UI.Xaml.Controls.IControlFactory).TypeHandle
-												), 
-								outerInspectable, 
-								out innerInspectable
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(outerInspectable);
-			global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(__pRetVal_WithAggregation);
-			return innerInspectable;
-		}
-
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "FontSize")]
 		public virtual double get_FontSize()
@@ -11952,66 +11543,6 @@ namespace Windows.UI.Xaml.Controls
 		}
 
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IsTabStop")]
-		public virtual bool get_IsTabStop()
-		{
-			bool __retVal = global::Windows.UI.Xaml.Controls.IControl__Impl.StubClass.get_IsTabStop(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "IsTabStop")]
-		public virtual void put_IsTabStop(bool value)
-		{
-			global::Windows.UI.Xaml.Controls.IControl__Impl.StubClass.put_IsTabStop(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Template")]
-		public virtual global::Windows.UI.Xaml.Controls.ControlTemplate get_Template()
-		{
-			global::Windows.UI.Xaml.Controls.ControlTemplate __retVal = global::Windows.UI.Xaml.Controls.IControl__Impl.StubClass.get_Template(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Template")]
-		public virtual void put_Template(global::Windows.UI.Xaml.Controls.ControlTemplate value)
-		{
-			global::Windows.UI.Xaml.Controls.IControl__Impl.StubClass.put_Template(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Padding")]
-		public virtual global::Windows.UI.Xaml.Thickness get_Padding()
-		{
-			global::Windows.UI.Xaml.Thickness __retVal = global::Windows.UI.Xaml.Controls.IControl__Impl.StubClass.get_Padding(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Padding")]
-		public virtual void put_Padding(global::Windows.UI.Xaml.Thickness value)
-		{
-			global::Windows.UI.Xaml.Controls.IControl__Impl.StubClass.put_Padding(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "HorizontalContentAlignment")]
 		public virtual global::Windows.UI.Xaml.HorizontalAlignment get_HorizontalContentAlignment()
 		{
@@ -12065,26 +11596,6 @@ namespace Windows.UI.Xaml.Controls
 		public virtual void put_Background(global::Windows.UI.Xaml.Media.Brush value)
 		{
 			global::Windows.UI.Xaml.Controls.IControl__Impl.StubClass.put_Background(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "BorderThickness")]
-		public virtual global::Windows.UI.Xaml.Thickness get_BorderThickness()
-		{
-			global::Windows.UI.Xaml.Thickness __retVal = global::Windows.UI.Xaml.Controls.IControl__Impl.StubClass.get_BorderThickness(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "BorderThickness")]
-		public virtual void put_BorderThickness(global::Windows.UI.Xaml.Thickness value)
-		{
-			global::Windows.UI.Xaml.Controls.IControl__Impl.StubClass.put_BorderThickness(
 								this, 
 								value
 							);
@@ -12571,49 +12082,6 @@ namespace Windows.UI.Xaml.Controls
 		}
 	}
 
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IControlTemplate))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class ControlTemplate : global::Windows.UI.Xaml.FrameworkTemplate, global::Windows.UI.Xaml.Controls.IControlTemplate
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
-		public ControlTemplate() : 
-				base(default(global::System.IntPtr))
-		{
-			global::System.IntPtr retval;
-			retval = global::System.Runtime.InteropServices.McgModuleManager.ActivateInstance("Windows.UI.Xaml.Controls.ControlTemplate");
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			this.__AttachAndRelease(retval);
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "TargetType")]
-		public global::System.Type get_TargetType()
-		{
-			global::System.Type __retVal = global::Windows.UI.Xaml.Controls.IControlTemplate__Impl.StubClass.get_TargetType(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "TargetType")]
-		public void put_TargetType(global::System.Type value)
-		{
-			global::Windows.UI.Xaml.Controls.IControlTemplate__Impl.StubClass.put_TargetType(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		public ControlTemplate(global::System.IntPtr dummy) : 
-				base(dummy)
-		{
-		}
-	}
-
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IUserControl))]
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -12845,26 +12313,6 @@ namespace Windows.UI.Xaml.Controls
 		public virtual void put_Content(object value)
 		{
 			global::Windows.UI.Xaml.Controls.IContentControl__Impl.StubClass.put_Content(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ContentTemplate")]
-		public virtual global::Windows.UI.Xaml.DataTemplate get_ContentTemplate()
-		{
-			global::Windows.UI.Xaml.DataTemplate __retVal = global::Windows.UI.Xaml.Controls.IContentControl__Impl.StubClass.get_ContentTemplate(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ContentTemplate")]
-		public virtual void put_ContentTemplate(global::Windows.UI.Xaml.DataTemplate value)
-		{
-			global::Windows.UI.Xaml.Controls.IContentControl__Impl.StubClass.put_ContentTemplate(
 								this, 
 								value
 							);
@@ -14736,46 +14184,6 @@ namespace Windows.UI.Xaml.Controls
 			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
 		}
 
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "TextLineBounds")]
-		public global::Windows.UI.Xaml.TextLineBounds get_TextLineBounds()
-		{
-			global::Windows.UI.Xaml.TextLineBounds __retVal = global::Windows.UI.Xaml.Controls.ITextBlock2__Impl.StubClass.get_TextLineBounds(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "TextLineBounds")]
-		public void put_TextLineBounds(global::Windows.UI.Xaml.TextLineBounds value)
-		{
-			global::Windows.UI.Xaml.Controls.ITextBlock2__Impl.StubClass.put_TextLineBounds(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "OpticalMarginAlignment")]
-		public global::Windows.UI.Xaml.OpticalMarginAlignment get_OpticalMarginAlignment()
-		{
-			global::Windows.UI.Xaml.OpticalMarginAlignment __retVal = global::Windows.UI.Xaml.Controls.ITextBlock2__Impl.StubClass.get_OpticalMarginAlignment(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "OpticalMarginAlignment")]
-		public void put_OpticalMarginAlignment(global::Windows.UI.Xaml.OpticalMarginAlignment value)
-		{
-			global::Windows.UI.Xaml.Controls.ITextBlock2__Impl.StubClass.put_OpticalMarginAlignment(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
 		public TextBlock(global::System.IntPtr dummy) : 
 				base(dummy)
 		{
@@ -16002,431 +15410,6 @@ namespace Windows.UI.Xaml.Controls
 		}
 	}
 
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IHubSection))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe class HubSection : global::Windows.UI.Xaml.Controls.Control, global::Windows.UI.Xaml.Controls.IHubSection
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
-		public HubSection() : 
-				base(default(global::System.IntPtr))
-		{
-			global::System.IntPtr retval;
-			retval = __Factory_Windows_UI_Xaml_Controls__IHubSectionFactory_CreateInstance("Windows.UI.Xaml.Controls.HubSection");
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			this.__AttachAndRelease(retval);
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::System.IntPtr __Factory_Windows_UI_Xaml_Controls__IHubSectionFactory_CreateInstance(string typeName)
-		{
-			global::System.IntPtr innerInspectable;
-			global::System.IntPtr outerInspectable = default(global::System.IntPtr);
-			if (global::System.Runtime.InteropServices.McgMarshal.IsOfType(
-								this, 
-								typeof(global::Windows.UI.Xaml.Controls.HubSection).TypeHandle
-							))
-			{
-				global::System.IntPtr __pRetVal_NoAggregation;
-				__pRetVal_NoAggregation = global::Windows.UI.Xaml.Controls.IHubSectionFactory__Impl.StubClass.CreateInstance(
-									global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
-														typeName, 
-														typeof(global::Windows.UI.Xaml.Controls.IHubSectionFactory).TypeHandle
-													), 
-									outerInspectable, 
-									out innerInspectable
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(innerInspectable);
-				global::McgInterop.McgHelpers.GetIUnknownForFactoryReturn(ref __pRetVal_NoAggregation);
-				return __pRetVal_NoAggregation;
-			}
-			else
-			{
-				outerInspectable = global::System.Runtime.InteropServices.McgMarshal.GetOuterIInspectableForManagedObject(this);
-				global::System.IntPtr __pRetVal_WithAggregation;
-				__pRetVal_WithAggregation = global::Windows.UI.Xaml.Controls.IHubSectionFactory__Impl.StubClass.CreateInstance(
-									global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
-														typeName, 
-														typeof(global::Windows.UI.Xaml.Controls.IHubSectionFactory).TypeHandle
-													), 
-									outerInspectable, 
-									out innerInspectable
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(outerInspectable);
-				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(__pRetVal_WithAggregation);
-				return innerInspectable;
-			}
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Header")]
-		public virtual object get_Header()
-		{
-			object __retVal = global::Windows.UI.Xaml.Controls.IHubSection__Impl.StubClass.get_Header(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Header")]
-		public virtual void put_Header(object value)
-		{
-			global::Windows.UI.Xaml.Controls.IHubSection__Impl.StubClass.put_Header(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ContentTemplate")]
-		public virtual global::Windows.UI.Xaml.DataTemplate get_ContentTemplate()
-		{
-			global::Windows.UI.Xaml.DataTemplate __retVal = global::Windows.UI.Xaml.Controls.IHubSection__Impl.StubClass.get_ContentTemplate(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ContentTemplate")]
-		public virtual void put_ContentTemplate(global::Windows.UI.Xaml.DataTemplate value)
-		{
-			global::Windows.UI.Xaml.Controls.IHubSection__Impl.StubClass.put_ContentTemplate(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IsHeaderInteractive")]
-		public virtual bool get_IsHeaderInteractive()
-		{
-			bool __retVal = global::Windows.UI.Xaml.Controls.IHubSection__Impl.StubClass.get_IsHeaderInteractive(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "IsHeaderInteractive")]
-		public virtual void put_IsHeaderInteractive(bool value)
-		{
-			global::Windows.UI.Xaml.Controls.IHubSection__Impl.StubClass.put_IsHeaderInteractive(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		public HubSection(global::System.IntPtr dummy) : 
-				base(dummy)
-		{
-		}
-	}
-
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IBorder))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class Border : global::Windows.UI.Xaml.FrameworkElement, global::Windows.UI.Xaml.Controls.IBorder
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
-		public Border() : 
-				base(default(global::System.IntPtr))
-		{
-			global::System.IntPtr retval;
-			retval = global::System.Runtime.InteropServices.McgModuleManager.ActivateInstance("Windows.UI.Xaml.Controls.Border");
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			this.__AttachAndRelease(retval);
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "BorderBrush")]
-		public global::Windows.UI.Xaml.Media.Brush get_BorderBrush()
-		{
-			global::Windows.UI.Xaml.Media.Brush __retVal = global::Windows.UI.Xaml.Controls.IBorder__Impl.StubClass.get_BorderBrush(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "BorderBrush")]
-		public void put_BorderBrush(global::Windows.UI.Xaml.Media.Brush value)
-		{
-			global::Windows.UI.Xaml.Controls.IBorder__Impl.StubClass.put_BorderBrush(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "BorderThickness")]
-		public global::Windows.UI.Xaml.Thickness get_BorderThickness()
-		{
-			global::Windows.UI.Xaml.Thickness __retVal = global::Windows.UI.Xaml.Controls.IBorder__Impl.StubClass.get_BorderThickness(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "BorderThickness")]
-		public void put_BorderThickness(global::Windows.UI.Xaml.Thickness value)
-		{
-			global::Windows.UI.Xaml.Controls.IBorder__Impl.StubClass.put_BorderThickness(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Background")]
-		public global::Windows.UI.Xaml.Media.Brush get_Background()
-		{
-			global::Windows.UI.Xaml.Media.Brush __retVal = global::Windows.UI.Xaml.Controls.IBorder__Impl.StubClass.get_Background(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Background")]
-		public void put_Background(global::Windows.UI.Xaml.Media.Brush value)
-		{
-			global::Windows.UI.Xaml.Controls.IBorder__Impl.StubClass.put_Background(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Child")]
-		public global::Windows.UI.Xaml.UIElement get_Child()
-		{
-			global::Windows.UI.Xaml.UIElement __retVal = global::Windows.UI.Xaml.Controls.IBorder__Impl.StubClass.get_Child(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Child")]
-		public void put_Child(global::Windows.UI.Xaml.UIElement value)
-		{
-			global::Windows.UI.Xaml.Controls.IBorder__Impl.StubClass.put_Child(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		public Border(global::System.IntPtr dummy) : 
-				base(dummy)
-		{
-		}
-	}
-
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IContentPresenter))]
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IContentPresenterOverrides))]
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IContentPresenter2))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe class ContentPresenter : global::Windows.UI.Xaml.FrameworkElement, global::Windows.UI.Xaml.Controls.IContentPresenter, global::Windows.UI.Xaml.Controls.IContentPresenterOverrides, global::Windows.UI.Xaml.Controls.IContentPresenter2, global::Windows.UI.Xaml.Controls.IContentPresenter3, global::Windows.UI.Xaml.Controls.IContentPresenter4
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
-		public ContentPresenter() : 
-				base(default(global::System.IntPtr))
-		{
-			global::System.IntPtr retval;
-			retval = __Factory_Windows_UI_Xaml_Controls__IContentPresenterFactory_CreateInstance("Windows.UI.Xaml.Controls.ContentPresenter");
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			this.__AttachAndRelease(retval);
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::System.IntPtr __Factory_Windows_UI_Xaml_Controls__IContentPresenterFactory_CreateInstance(string typeName)
-		{
-			global::System.IntPtr innerInspectable;
-			global::System.IntPtr outerInspectable = default(global::System.IntPtr);
-			if (global::System.Runtime.InteropServices.McgMarshal.IsOfType(
-								this, 
-								typeof(global::Windows.UI.Xaml.Controls.ContentPresenter).TypeHandle
-							))
-			{
-				global::System.IntPtr __pRetVal_NoAggregation;
-				__pRetVal_NoAggregation = global::Windows.UI.Xaml.Controls.IContentPresenterFactory__Impl.StubClass.CreateInstance(
-									global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
-														typeName, 
-														typeof(global::Windows.UI.Xaml.Controls.IContentPresenterFactory).TypeHandle
-													), 
-									outerInspectable, 
-									out innerInspectable
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(innerInspectable);
-				global::McgInterop.McgHelpers.GetIUnknownForFactoryReturn(ref __pRetVal_NoAggregation);
-				return __pRetVal_NoAggregation;
-			}
-			else
-			{
-				outerInspectable = global::System.Runtime.InteropServices.McgMarshal.GetOuterIInspectableForManagedObject(this);
-				global::System.IntPtr __pRetVal_WithAggregation;
-				__pRetVal_WithAggregation = global::Windows.UI.Xaml.Controls.IContentPresenterFactory__Impl.StubClass.CreateInstance(
-									global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
-														typeName, 
-														typeof(global::Windows.UI.Xaml.Controls.IContentPresenterFactory).TypeHandle
-													), 
-									outerInspectable, 
-									out innerInspectable
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(outerInspectable);
-				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(__pRetVal_WithAggregation);
-				return innerInspectable;
-			}
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Content")]
-		public virtual object get_Content()
-		{
-			object __retVal = global::Windows.UI.Xaml.Controls.IContentPresenter__Impl.StubClass.get_Content(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Content")]
-		public virtual void put_Content(object value)
-		{
-			global::Windows.UI.Xaml.Controls.IContentPresenter__Impl.StubClass.put_Content(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ContentTemplate")]
-		public virtual global::Windows.UI.Xaml.DataTemplate get_ContentTemplate()
-		{
-			global::Windows.UI.Xaml.DataTemplate __retVal = global::Windows.UI.Xaml.Controls.IContentPresenter__Impl.StubClass.get_ContentTemplate(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ContentTemplate")]
-		public virtual void put_ContentTemplate(global::Windows.UI.Xaml.DataTemplate value)
-		{
-			global::Windows.UI.Xaml.Controls.IContentPresenter__Impl.StubClass.put_ContentTemplate(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		void global::Windows.UI.Xaml.Controls.IContentPresenterOverrides.OnContentTemplateChanged(
-					global::Windows.UI.Xaml.DataTemplate oldContentTemplate, 
-					global::Windows.UI.Xaml.DataTemplate newContentTemplate)
-		{
-			this.OnContentTemplateChanged(
-								oldContentTemplate, 
-								newContentTemplate
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		protected virtual void OnContentTemplateChanged(
-					global::Windows.UI.Xaml.DataTemplate oldContentTemplate, 
-					global::Windows.UI.Xaml.DataTemplate newContentTemplate)
-		{
-			global::Windows.UI.Xaml.Controls.IContentPresenterOverrides__Impl.StubClass.OnContentTemplateChanged(
-								this, 
-								oldContentTemplate, 
-								newContentTemplate
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		void global::Windows.UI.Xaml.Controls.IContentPresenterOverrides.OnContentTemplateSelectorChanged(
-					global::Windows.UI.Xaml.Controls.DataTemplateSelector oldContentTemplateSelector, 
-					global::Windows.UI.Xaml.Controls.DataTemplateSelector newContentTemplateSelector)
-		{
-			this.OnContentTemplateSelectorChanged(
-								oldContentTemplateSelector, 
-								newContentTemplateSelector
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		protected virtual void OnContentTemplateSelectorChanged(
-					global::Windows.UI.Xaml.Controls.DataTemplateSelector oldContentTemplateSelector, 
-					global::Windows.UI.Xaml.Controls.DataTemplateSelector newContentTemplateSelector)
-		{
-			global::Windows.UI.Xaml.Controls.IContentPresenterOverrides__Impl.StubClass.OnContentTemplateSelectorChanged(
-								this, 
-								oldContentTemplateSelector, 
-								newContentTemplateSelector
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "OpticalMarginAlignment")]
-		public virtual global::Windows.UI.Xaml.OpticalMarginAlignment get_OpticalMarginAlignment()
-		{
-			global::Windows.UI.Xaml.OpticalMarginAlignment __retVal = global::Windows.UI.Xaml.Controls.IContentPresenter2__Impl.StubClass.get_OpticalMarginAlignment(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "OpticalMarginAlignment")]
-		public virtual void put_OpticalMarginAlignment(global::Windows.UI.Xaml.OpticalMarginAlignment value)
-		{
-			global::Windows.UI.Xaml.Controls.IContentPresenter2__Impl.StubClass.put_OpticalMarginAlignment(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "TextLineBounds")]
-		public virtual global::Windows.UI.Xaml.TextLineBounds get_TextLineBounds()
-		{
-			global::Windows.UI.Xaml.TextLineBounds __retVal = global::Windows.UI.Xaml.Controls.IContentPresenter2__Impl.StubClass.get_TextLineBounds(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "TextLineBounds")]
-		public virtual void put_TextLineBounds(global::Windows.UI.Xaml.TextLineBounds value)
-		{
-			global::Windows.UI.Xaml.Controls.IContentPresenter2__Impl.StubClass.put_TextLineBounds(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		public ContentPresenter(global::System.IntPtr dummy) : 
-				base(dummy)
-		{
-		}
-	}
-
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IVariableSizedWrapGrid))]
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -16549,263 +15532,6 @@ namespace Windows.UI.Xaml.Controls
 		}
 
 		public VariableSizedWrapGrid(global::System.IntPtr dummy) : 
-				base(dummy)
-		{
-		}
-	}
-
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IHub))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe class Hub : global::Windows.UI.Xaml.Controls.Control, global::Windows.UI.Xaml.Controls.IHub, global::Windows.UI.Xaml.Controls.ISemanticZoomInformation
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
-		public Hub() : 
-				base(default(global::System.IntPtr))
-		{
-			global::System.IntPtr retval;
-			retval = __Factory_Windows_UI_Xaml_Controls__IHubFactory_CreateInstance("Windows.UI.Xaml.Controls.Hub");
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			this.__AttachAndRelease(retval);
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::System.IntPtr __Factory_Windows_UI_Xaml_Controls__IHubFactory_CreateInstance(string typeName)
-		{
-			global::System.IntPtr innerInspectable;
-			global::System.IntPtr outerInspectable = default(global::System.IntPtr);
-			if (global::System.Runtime.InteropServices.McgMarshal.IsOfType(
-								this, 
-								typeof(global::Windows.UI.Xaml.Controls.Hub).TypeHandle
-							))
-			{
-				global::System.IntPtr __pRetVal_NoAggregation;
-				__pRetVal_NoAggregation = global::Windows.UI.Xaml.Controls.IHubFactory__Impl.StubClass.CreateInstance(
-									global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
-														typeName, 
-														typeof(global::Windows.UI.Xaml.Controls.IHubFactory).TypeHandle
-													), 
-									outerInspectable, 
-									out innerInspectable
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(innerInspectable);
-				global::McgInterop.McgHelpers.GetIUnknownForFactoryReturn(ref __pRetVal_NoAggregation);
-				return __pRetVal_NoAggregation;
-			}
-			else
-			{
-				outerInspectable = global::System.Runtime.InteropServices.McgMarshal.GetOuterIInspectableForManagedObject(this);
-				global::System.IntPtr __pRetVal_WithAggregation;
-				__pRetVal_WithAggregation = global::Windows.UI.Xaml.Controls.IHubFactory__Impl.StubClass.CreateInstance(
-									global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
-														typeName, 
-														typeof(global::Windows.UI.Xaml.Controls.IHubFactory).TypeHandle
-													), 
-									outerInspectable, 
-									out innerInspectable
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(outerInspectable);
-				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(__pRetVal_WithAggregation);
-				return innerInspectable;
-			}
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "HeaderTemplate")]
-		public virtual global::Windows.UI.Xaml.DataTemplate get_HeaderTemplate()
-		{
-			global::Windows.UI.Xaml.DataTemplate __retVal = global::Windows.UI.Xaml.Controls.IHub__Impl.StubClass.get_HeaderTemplate(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "HeaderTemplate")]
-		public virtual void put_HeaderTemplate(global::Windows.UI.Xaml.DataTemplate value)
-		{
-			global::Windows.UI.Xaml.Controls.IHub__Impl.StubClass.put_HeaderTemplate(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Sections")]
-		public virtual global::System.Collections.Generic.IList<global::Windows.UI.Xaml.Controls.HubSection> get_Sections()
-		{
-			global::System.Collections.Generic.IList<global::Windows.UI.Xaml.Controls.HubSection> __retVal = global::Windows.UI.Xaml.Controls.IHub__Impl.StubClass.get_Sections(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "SectionHeaderClick")]
-		public virtual global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_SectionHeaderClick(global::Windows.UI.Xaml.Controls.HubSectionHeaderClickEventHandler value)
-		{
-			global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __retVal = global::Windows.UI.Xaml.Controls.IHub__Impl.StubClass.add_SectionHeaderClick(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "SectionHeaderClick")]
-		public virtual void remove_SectionHeaderClick(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
-		{
-			global::Windows.UI.Xaml.Controls.IHub__Impl.StubClass.remove_SectionHeaderClick(
-								this, 
-								token
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "SectionsInViewChanged")]
-		public virtual global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_SectionsInViewChanged(global::Windows.UI.Xaml.Controls.SectionsInViewChangedEventHandler value)
-		{
-			global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __retVal = global::Windows.UI.Xaml.Controls.IHub__Impl.StubClass.add_SectionsInViewChanged(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "SectionsInViewChanged")]
-		public virtual void remove_SectionsInViewChanged(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
-		{
-			global::Windows.UI.Xaml.Controls.IHub__Impl.StubClass.remove_SectionsInViewChanged(
-								this, 
-								token
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		public Hub(global::System.IntPtr dummy) : 
-				base(dummy)
-		{
-		}
-	}
-
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IHubSectionHeaderClickEventArgs))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class HubSectionHeaderClickEventArgs : global::System.__ComObject, global::Windows.UI.Xaml.Controls.IHubSectionHeaderClickEventArgs
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Section")]
-		public global::Windows.UI.Xaml.Controls.HubSection get_Section()
-		{
-			global::Windows.UI.Xaml.Controls.HubSection __retVal = global::Windows.UI.Xaml.Controls.IHubSectionHeaderClickEventArgs__Impl.StubClass.get_Section(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		public HubSectionHeaderClickEventArgs(global::System.IntPtr dummy)
-		{
-		}
-	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe class SectionsInViewChangedEventArgs : global::System.__ComObject, global::Windows.UI.Xaml.Controls.ISectionsInViewChangedEventArgs
-	{
-		public SectionsInViewChangedEventArgs(global::System.IntPtr dummy)
-		{
-		}
-	}
-
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IAppBarButton))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe class AppBarButton : global::Windows.UI.Xaml.Controls.Button, global::Windows.UI.Xaml.Controls.IAppBarButton, global::Windows.UI.Xaml.Controls.ICommandBarElement
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
-		public AppBarButton() : 
-				base(default(global::System.IntPtr))
-		{
-			global::System.IntPtr retval;
-			retval = __Factory_Windows_UI_Xaml_Controls__IAppBarButtonFactory_CreateInstance("Windows.UI.Xaml.Controls.AppBarButton");
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			this.__AttachAndRelease(retval);
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::System.IntPtr __Factory_Windows_UI_Xaml_Controls__IAppBarButtonFactory_CreateInstance(string typeName)
-		{
-			global::System.IntPtr innerInspectable;
-			global::System.IntPtr outerInspectable = default(global::System.IntPtr);
-			if (global::System.Runtime.InteropServices.McgMarshal.IsOfType(
-								this, 
-								typeof(global::Windows.UI.Xaml.Controls.AppBarButton).TypeHandle
-							))
-			{
-				global::System.IntPtr __pRetVal_NoAggregation;
-				__pRetVal_NoAggregation = global::Windows.UI.Xaml.Controls.IAppBarButtonFactory__Impl.StubClass.CreateInstance(
-									global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
-														typeName, 
-														typeof(global::Windows.UI.Xaml.Controls.IAppBarButtonFactory).TypeHandle
-													), 
-									outerInspectable, 
-									out innerInspectable
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(innerInspectable);
-				global::McgInterop.McgHelpers.GetIUnknownForFactoryReturn(ref __pRetVal_NoAggregation);
-				return __pRetVal_NoAggregation;
-			}
-			else
-			{
-				outerInspectable = global::System.Runtime.InteropServices.McgMarshal.GetOuterIInspectableForManagedObject(this);
-				global::System.IntPtr __pRetVal_WithAggregation;
-				__pRetVal_WithAggregation = global::Windows.UI.Xaml.Controls.IAppBarButtonFactory__Impl.StubClass.CreateInstance(
-									global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
-														typeName, 
-														typeof(global::Windows.UI.Xaml.Controls.IAppBarButtonFactory).TypeHandle
-													), 
-									outerInspectable, 
-									out innerInspectable
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(outerInspectable);
-				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(__pRetVal_WithAggregation);
-				return innerInspectable;
-			}
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Icon")]
-		public virtual global::Windows.UI.Xaml.Controls.IconElement get_Icon()
-		{
-			global::Windows.UI.Xaml.Controls.IconElement __retVal = global::Windows.UI.Xaml.Controls.IAppBarButton__Impl.StubClass.get_Icon(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Icon")]
-		public virtual void put_Icon(global::Windows.UI.Xaml.Controls.IconElement value)
-		{
-			global::Windows.UI.Xaml.Controls.IAppBarButton__Impl.StubClass.put_Icon(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		public AppBarButton(global::System.IntPtr dummy) : 
 				base(dummy)
 		{
 		}
@@ -18366,16 +17092,6 @@ namespace Windows.UI.Xaml.Controls
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IControlFactory
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::System.IntPtr CreateInstance(
-					global::System.IntPtr outer, 
-					out global::System.IntPtr inner);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IControl
 	{
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
@@ -18411,30 +17127,6 @@ namespace Windows.UI.Xaml.Controls
 		void put_Foreground(global::Windows.UI.Xaml.Media.Brush value);
 
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IsTabStop")]
-		bool get_IsTabStop();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "IsTabStop")]
-		void put_IsTabStop(bool value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Template")]
-		global::Windows.UI.Xaml.Controls.ControlTemplate get_Template();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Template")]
-		void put_Template(global::Windows.UI.Xaml.Controls.ControlTemplate value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Padding")]
-		global::Windows.UI.Xaml.Thickness get_Padding();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Padding")]
-		void put_Padding(global::Windows.UI.Xaml.Thickness value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "HorizontalContentAlignment")]
 		global::Windows.UI.Xaml.HorizontalAlignment get_HorizontalContentAlignment();
 
@@ -18459,33 +17151,12 @@ namespace Windows.UI.Xaml.Controls
 		void put_Background(global::Windows.UI.Xaml.Media.Brush value);
 
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "BorderThickness")]
-		global::Windows.UI.Xaml.Thickness get_BorderThickness();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "BorderThickness")]
-		void put_BorderThickness(global::Windows.UI.Xaml.Thickness value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "IsEnabledChanged")]
 		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_IsEnabledChanged(global::Windows.UI.Xaml.DependencyPropertyChangedEventHandler value);
 
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "IsEnabledChanged")]
 		void remove_IsEnabledChanged(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IControlTemplate
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "TargetType")]
-		global::System.Type get_TargetType();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "TargetType")]
-		void put_TargetType(global::System.Type value);
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -18649,14 +17320,6 @@ namespace Windows.UI.Xaml.Controls
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Content")]
 		void put_Content(object value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ContentTemplate")]
-		global::Windows.UI.Xaml.DataTemplate get_ContentTemplate();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ContentTemplate")]
-		void put_ContentTemplate(global::Windows.UI.Xaml.DataTemplate value);
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -19193,22 +17856,6 @@ namespace Windows.UI.Xaml.Controls
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "MaxLines")]
 		void put_MaxLines(int value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "TextLineBounds")]
-		global::Windows.UI.Xaml.TextLineBounds get_TextLineBounds();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "TextLineBounds")]
-		void put_TextLineBounds(global::Windows.UI.Xaml.TextLineBounds value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "OpticalMarginAlignment")]
-		global::Windows.UI.Xaml.OpticalMarginAlignment get_OpticalMarginAlignment();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "OpticalMarginAlignment")]
-		void put_OpticalMarginAlignment(global::Windows.UI.Xaml.OpticalMarginAlignment value);
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -19632,161 +18279,6 @@ namespace Windows.UI.Xaml.Controls
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IHubSectionFactory
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::System.IntPtr CreateInstance(
-					global::System.IntPtr outer, 
-					out global::System.IntPtr inner);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IHubSection
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Header")]
-		object get_Header();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Header")]
-		void put_Header(object value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ContentTemplate")]
-		global::Windows.UI.Xaml.DataTemplate get_ContentTemplate();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ContentTemplate")]
-		void put_ContentTemplate(global::Windows.UI.Xaml.DataTemplate value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IsHeaderInteractive")]
-		bool get_IsHeaderInteractive();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "IsHeaderInteractive")]
-		void put_IsHeaderInteractive(bool value);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IBorder
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "BorderBrush")]
-		global::Windows.UI.Xaml.Media.Brush get_BorderBrush();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "BorderBrush")]
-		void put_BorderBrush(global::Windows.UI.Xaml.Media.Brush value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "BorderThickness")]
-		global::Windows.UI.Xaml.Thickness get_BorderThickness();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "BorderThickness")]
-		void put_BorderThickness(global::Windows.UI.Xaml.Thickness value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Background")]
-		global::Windows.UI.Xaml.Media.Brush get_Background();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Background")]
-		void put_Background(global::Windows.UI.Xaml.Media.Brush value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Child")]
-		global::Windows.UI.Xaml.UIElement get_Child();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Child")]
-		void put_Child(global::Windows.UI.Xaml.UIElement value);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IContentPresenterFactory
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::System.IntPtr CreateInstance(
-					global::System.IntPtr outer, 
-					out global::System.IntPtr inner);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IContentPresenter
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Content")]
-		object get_Content();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Content")]
-		void put_Content(object value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ContentTemplate")]
-		global::Windows.UI.Xaml.DataTemplate get_ContentTemplate();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ContentTemplate")]
-		void put_ContentTemplate(global::Windows.UI.Xaml.DataTemplate value);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IContentPresenterOverrides
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void OnContentTemplateChanged(
-					global::Windows.UI.Xaml.DataTemplate oldContentTemplate, 
-					global::Windows.UI.Xaml.DataTemplate newContentTemplate);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void OnContentTemplateSelectorChanged(
-					global::Windows.UI.Xaml.Controls.DataTemplateSelector oldContentTemplateSelector, 
-					global::Windows.UI.Xaml.Controls.DataTemplateSelector newContentTemplateSelector);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IContentPresenter2
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "OpticalMarginAlignment")]
-		global::Windows.UI.Xaml.OpticalMarginAlignment get_OpticalMarginAlignment();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "OpticalMarginAlignment")]
-		void put_OpticalMarginAlignment(global::Windows.UI.Xaml.OpticalMarginAlignment value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "TextLineBounds")]
-		global::Windows.UI.Xaml.TextLineBounds get_TextLineBounds();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "TextLineBounds")]
-		void put_TextLineBounds(global::Windows.UI.Xaml.TextLineBounds value);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IContentPresenter3
-	{
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IContentPresenter4
-	{
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IVariableSizedWrapGridStatics
 	{
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
@@ -19825,105 +18317,6 @@ namespace Windows.UI.Xaml.Controls
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Orientation")]
 		void put_Orientation(global::Windows.UI.Xaml.Controls.Orientation value);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IHubFactory
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::System.IntPtr CreateInstance(
-					global::System.IntPtr outer, 
-					out global::System.IntPtr inner);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IHub
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "HeaderTemplate")]
-		global::Windows.UI.Xaml.DataTemplate get_HeaderTemplate();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "HeaderTemplate")]
-		void put_HeaderTemplate(global::Windows.UI.Xaml.DataTemplate value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Sections")]
-		global::System.Collections.Generic.IList<global::Windows.UI.Xaml.Controls.HubSection> get_Sections();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "SectionHeaderClick")]
-		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_SectionHeaderClick(global::Windows.UI.Xaml.Controls.HubSectionHeaderClickEventHandler value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "SectionHeaderClick")]
-		void remove_SectionHeaderClick(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "SectionsInViewChanged")]
-		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_SectionsInViewChanged(global::Windows.UI.Xaml.Controls.SectionsInViewChangedEventHandler value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "SectionsInViewChanged")]
-		void remove_SectionsInViewChanged(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe delegate void HubSectionHeaderClickEventHandler(
-				object sender, 
-				global::Windows.UI.Xaml.Controls.HubSectionHeaderClickEventArgs e);
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IHubSectionHeaderClickEventArgs
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Section")]
-		global::Windows.UI.Xaml.Controls.HubSection get_Section();
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe delegate void SectionsInViewChangedEventHandler(
-				object sender, 
-				global::Windows.UI.Xaml.Controls.SectionsInViewChangedEventArgs e);
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface ISectionsInViewChangedEventArgs
-	{
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IAppBarButtonFactory
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::System.IntPtr CreateInstance(
-					global::System.IntPtr outer, 
-					out global::System.IntPtr inner);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IAppBarButton
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Icon")]
-		global::Windows.UI.Xaml.Controls.IconElement get_Icon();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Icon")]
-		void put_Icon(global::Windows.UI.Xaml.Controls.IconElement value);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface ICommandBarElement
-	{
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -21684,133 +20077,6 @@ namespace Windows.UI.Xaml.Media
 		}
 	}
 
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IList<double>))]
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IEnumerable<double>))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class DoubleCollection : global::System.__ComObject, global::System.Collections.Generic.IList<double>, global::System.Collections.Generic.ICollection<double>, global::System.Collections.Generic.IEnumerable<double>
-	{
-		int global::System.Collections.Generic.ICollection<double>.Count
-		{
-			get
-			{
-				return global::System.Collections.Generic.IList_A_double_V___Impl.ICollectionRCWAdapterClass.Count(this);
-			}
-		}
-
-		bool global::System.Collections.Generic.ICollection<double>.IsReadOnly
-		{
-			get
-			{
-				return global::System.Collections.Generic.IList_A_double_V___Impl.ICollectionRCWAdapterClass.IsReadOnly(this);
-			}
-		}
-
-		void global::System.Collections.Generic.ICollection<double>.Add(double item)
-		{
-			global::System.Collections.Generic.IList_A_double_V___Impl.ICollectionRCWAdapterClass.Add(
-								this, 
-								item
-							);
-		}
-
-		void global::System.Collections.Generic.ICollection<double>.Clear()
-		{
-			global::System.Collections.Generic.IList_A_double_V___Impl.ICollectionRCWAdapterClass.Clear(this);
-		}
-
-		bool global::System.Collections.Generic.ICollection<double>.Contains(double item)
-		{
-			return global::System.Collections.Generic.IList_A_double_V___Impl.ICollectionRCWAdapterClass.Contains(
-								this, 
-								item
-							);
-		}
-
-		void global::System.Collections.Generic.ICollection<double>.CopyTo(
-					double[] array, 
-					int arrayindex)
-		{
-			global::System.Collections.Generic.IList_A_double_V___Impl.ICollectionRCWAdapterClass.CopyTo(
-								this, 
-								array, 
-								arrayindex
-							);
-		}
-
-		bool global::System.Collections.Generic.ICollection<double>.Remove(double item)
-		{
-			return global::System.Collections.Generic.IList_A_double_V___Impl.ICollectionRCWAdapterClass.Remove(
-								this, 
-								item
-							);
-		}
-
-		double global::System.Collections.Generic.IList<double>.this[int index]
-		{
-			get
-			{
-				return global::System.Collections.Generic.IList_A_double_V___Impl.RCWAdapterClass.Indexer_Get(
-									this, 
-									index
-								);
-			}
-			set
-			{
-				global::System.Collections.Generic.IList_A_double_V___Impl.RCWAdapterClass.Indexer_Set(
-									this, 
-									index, 
-									value
-								);
-			}
-		}
-
-		int global::System.Collections.Generic.IList<double>.IndexOf(double item)
-		{
-			return global::System.Collections.Generic.IList_A_double_V___Impl.RCWAdapterClass.IndexOf(
-								this, 
-								item
-							);
-		}
-
-		void global::System.Collections.Generic.IList<double>.Insert(
-					int index, 
-					double item)
-		{
-			global::System.Collections.Generic.IList_A_double_V___Impl.RCWAdapterClass.Insert(
-								this, 
-								index, 
-								item
-							);
-		}
-
-		void global::System.Collections.Generic.IList<double>.RemoveAt(int index)
-		{
-			global::System.Collections.Generic.IList_A_double_V___Impl.RCWAdapterClass.RemoveAt(
-								this, 
-								index
-							);
-		}
-
-		global::System.Collections.Generic.IEnumerator<double> global::System.Collections.Generic.IEnumerable<double>.GetEnumerator()
-		{
-			return (global::System.Collections.Generic.IEnumerator<double>)global::McgInterop.McgHelpers.GetGenericEnumerator(
-								this, 
-								typeof(global::System.Collections.Generic.IEnumerable<double>).TypeHandle
-							);
-		}
-
-		global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator()
-		{
-			return global::McgInterop.McgHelpers.GetNonGenericEnumerator(this);
-		}
-
-		public DoubleCollection(global::System.IntPtr dummy)
-		{
-		}
-	}
-
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Media.ITileBrush))]
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -22230,17 +20496,6 @@ namespace Windows.UI.Xaml.Media
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public enum PenLineCap
-	{
-		Flat = 0,
-		Square = 1,
-		Round = 2,
-		Triangle = 3,
-	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public enum AudioCategory
 	{
 		Other = 0,
@@ -22411,614 +20666,6 @@ namespace Windows.UI.Xaml.Media.Animation
 		}
 	}
 
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Media.Animation.ITimeline))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe class Timeline : global::Windows.UI.Xaml.DependencyObject, global::Windows.UI.Xaml.Media.Animation.ITimeline
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Duration")]
-		public virtual global::Windows.UI.Xaml.Duration get_Duration()
-		{
-			global::Windows.UI.Xaml.Duration __retVal = global::Windows.UI.Xaml.Media.Animation.ITimeline__Impl.StubClass.get_Duration(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Duration")]
-		public virtual void put_Duration(global::Windows.UI.Xaml.Duration value)
-		{
-			global::Windows.UI.Xaml.Media.Animation.ITimeline__Impl.StubClass.put_Duration(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "Completed")]
-		public virtual global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_Completed(global::System.EventHandler<object> value)
-		{
-			global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __retVal = global::Windows.UI.Xaml.Media.Animation.ITimeline__Impl.StubClass.add_Completed(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "Completed")]
-		public virtual void remove_Completed(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
-		{
-			global::Windows.UI.Xaml.Media.Animation.ITimeline__Impl.StubClass.remove_Completed(
-								this, 
-								token
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		public Timeline(global::System.IntPtr dummy) : 
-				base(dummy)
-		{
-		}
-	}
-
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Media.Animation.IStoryboard))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class Storyboard : global::Windows.UI.Xaml.Media.Animation.Timeline, global::Windows.UI.Xaml.Media.Animation.IStoryboard
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
-		public Storyboard() : 
-				base(default(global::System.IntPtr))
-		{
-			global::System.IntPtr retval;
-			retval = global::System.Runtime.InteropServices.McgModuleManager.ActivateInstance("Windows.UI.Xaml.Media.Animation.Storyboard");
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			this.__AttachAndRelease(retval);
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Children")]
-		public global::Windows.UI.Xaml.Media.Animation.TimelineCollection get_Children()
-		{
-			global::Windows.UI.Xaml.Media.Animation.TimelineCollection __retVal = global::Windows.UI.Xaml.Media.Animation.IStoryboard__Impl.StubClass.get_Children(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public static string GetTargetProperty(global::Windows.UI.Xaml.Media.Animation.Timeline element)
-		{
-			string retval;
-			retval = __Factory_Windows_UI_Xaml_Media_Animation__IStoryboardStatics_GetTargetProperty(
-								"Windows.UI.Xaml.Media.Animation.Storyboard", 
-								element
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return retval;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		static string __Factory_Windows_UI_Xaml_Media_Animation__IStoryboardStatics_GetTargetProperty(
-					string typeName, 
-					global::Windows.UI.Xaml.Media.Animation.Timeline element)
-		{
-			string __pRetVal;
-			__pRetVal = global::Windows.UI.Xaml.Media.Animation.IStoryboardStatics__Impl.StubClass.GetTargetProperty(
-								global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
-													typeName, 
-													typeof(global::Windows.UI.Xaml.Media.Animation.IStoryboardStatics).TypeHandle
-												), 
-								element
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __pRetVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public static void SetTargetProperty(
-					global::Windows.UI.Xaml.Media.Animation.Timeline element, 
-					string path)
-		{
-			__Factory_Windows_UI_Xaml_Media_Animation__IStoryboardStatics_SetTargetProperty(
-								"Windows.UI.Xaml.Media.Animation.Storyboard", 
-								element, 
-								path
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		static void __Factory_Windows_UI_Xaml_Media_Animation__IStoryboardStatics_SetTargetProperty(
-					string typeName, 
-					global::Windows.UI.Xaml.Media.Animation.Timeline element, 
-					string path)
-		{
-			global::Windows.UI.Xaml.Media.Animation.IStoryboardStatics__Impl.StubClass.SetTargetProperty(
-								global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
-													typeName, 
-													typeof(global::Windows.UI.Xaml.Media.Animation.IStoryboardStatics).TypeHandle
-												), 
-								element, 
-								path
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public static string GetTargetName(global::Windows.UI.Xaml.Media.Animation.Timeline element)
-		{
-			string retval;
-			retval = __Factory_Windows_UI_Xaml_Media_Animation__IStoryboardStatics_GetTargetName(
-								"Windows.UI.Xaml.Media.Animation.Storyboard", 
-								element
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return retval;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		static string __Factory_Windows_UI_Xaml_Media_Animation__IStoryboardStatics_GetTargetName(
-					string typeName, 
-					global::Windows.UI.Xaml.Media.Animation.Timeline element)
-		{
-			string __pRetVal;
-			__pRetVal = global::Windows.UI.Xaml.Media.Animation.IStoryboardStatics__Impl.StubClass.GetTargetName(
-								global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
-													typeName, 
-													typeof(global::Windows.UI.Xaml.Media.Animation.IStoryboardStatics).TypeHandle
-												), 
-								element
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __pRetVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public static void SetTargetName(
-					global::Windows.UI.Xaml.Media.Animation.Timeline element, 
-					string name)
-		{
-			__Factory_Windows_UI_Xaml_Media_Animation__IStoryboardStatics_SetTargetName(
-								"Windows.UI.Xaml.Media.Animation.Storyboard", 
-								element, 
-								name
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		static void __Factory_Windows_UI_Xaml_Media_Animation__IStoryboardStatics_SetTargetName(
-					string typeName, 
-					global::Windows.UI.Xaml.Media.Animation.Timeline element, 
-					string name)
-		{
-			global::Windows.UI.Xaml.Media.Animation.IStoryboardStatics__Impl.StubClass.SetTargetName(
-								global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
-													typeName, 
-													typeof(global::Windows.UI.Xaml.Media.Animation.IStoryboardStatics).TypeHandle
-												), 
-								element, 
-								name
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		public Storyboard(global::System.IntPtr dummy) : 
-				base(dummy)
-		{
-		}
-	}
-
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IList<global::Windows.UI.Xaml.Media.Animation.Timeline>))]
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.Media.Animation.Timeline>))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class TimelineCollection : global::System.__ComObject, global::System.Collections.Generic.IList<global::Windows.UI.Xaml.Media.Animation.Timeline>, global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Media.Animation.Timeline>, global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.Media.Animation.Timeline>
-	{
-		int global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Media.Animation.Timeline>.Count
-		{
-			get
-			{
-				return global::System.Collections.Generic.IList_A_Windows_UI_Xaml_Media_Animation_Timeline_V___Impl.ICollectionRCWAdapterClass.Count(this);
-			}
-		}
-
-		bool global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Media.Animation.Timeline>.IsReadOnly
-		{
-			get
-			{
-				return global::System.Collections.Generic.IList_A_Windows_UI_Xaml_Media_Animation_Timeline_V___Impl.ICollectionRCWAdapterClass.IsReadOnly(this);
-			}
-		}
-
-		void global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Media.Animation.Timeline>.Add(global::Windows.UI.Xaml.Media.Animation.Timeline item)
-		{
-			global::System.Collections.Generic.IList_A_Windows_UI_Xaml_Media_Animation_Timeline_V___Impl.ICollectionRCWAdapterClass.Add(
-								this, 
-								item
-							);
-		}
-
-		void global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Media.Animation.Timeline>.Clear()
-		{
-			global::System.Collections.Generic.IList_A_Windows_UI_Xaml_Media_Animation_Timeline_V___Impl.ICollectionRCWAdapterClass.Clear(this);
-		}
-
-		bool global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Media.Animation.Timeline>.Contains(global::Windows.UI.Xaml.Media.Animation.Timeline item)
-		{
-			return global::System.Collections.Generic.IList_A_Windows_UI_Xaml_Media_Animation_Timeline_V___Impl.ICollectionRCWAdapterClass.Contains(
-								this, 
-								item
-							);
-		}
-
-		void global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Media.Animation.Timeline>.CopyTo(
-					global::Windows.UI.Xaml.Media.Animation.Timeline[] array, 
-					int arrayindex)
-		{
-			global::System.Collections.Generic.IList_A_Windows_UI_Xaml_Media_Animation_Timeline_V___Impl.ICollectionRCWAdapterClass.CopyTo(
-								this, 
-								array, 
-								arrayindex
-							);
-		}
-
-		bool global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Media.Animation.Timeline>.Remove(global::Windows.UI.Xaml.Media.Animation.Timeline item)
-		{
-			return global::System.Collections.Generic.IList_A_Windows_UI_Xaml_Media_Animation_Timeline_V___Impl.ICollectionRCWAdapterClass.Remove(
-								this, 
-								item
-							);
-		}
-
-		global::Windows.UI.Xaml.Media.Animation.Timeline global::System.Collections.Generic.IList<global::Windows.UI.Xaml.Media.Animation.Timeline>.this[int index]
-		{
-			get
-			{
-				return global::System.Collections.Generic.IList_A_Windows_UI_Xaml_Media_Animation_Timeline_V___Impl.RCWAdapterClass.Indexer_Get(
-									this, 
-									index
-								);
-			}
-			set
-			{
-				global::System.Collections.Generic.IList_A_Windows_UI_Xaml_Media_Animation_Timeline_V___Impl.RCWAdapterClass.Indexer_Set(
-									this, 
-									index, 
-									value
-								);
-			}
-		}
-
-		int global::System.Collections.Generic.IList<global::Windows.UI.Xaml.Media.Animation.Timeline>.IndexOf(global::Windows.UI.Xaml.Media.Animation.Timeline item)
-		{
-			return global::System.Collections.Generic.IList_A_Windows_UI_Xaml_Media_Animation_Timeline_V___Impl.RCWAdapterClass.IndexOf(
-								this, 
-								item
-							);
-		}
-
-		void global::System.Collections.Generic.IList<global::Windows.UI.Xaml.Media.Animation.Timeline>.Insert(
-					int index, 
-					global::Windows.UI.Xaml.Media.Animation.Timeline item)
-		{
-			global::System.Collections.Generic.IList_A_Windows_UI_Xaml_Media_Animation_Timeline_V___Impl.RCWAdapterClass.Insert(
-								this, 
-								index, 
-								item
-							);
-		}
-
-		void global::System.Collections.Generic.IList<global::Windows.UI.Xaml.Media.Animation.Timeline>.RemoveAt(int index)
-		{
-			global::System.Collections.Generic.IList_A_Windows_UI_Xaml_Media_Animation_Timeline_V___Impl.RCWAdapterClass.RemoveAt(
-								this, 
-								index
-							);
-		}
-
-		global::System.Collections.Generic.IEnumerator<global::Windows.UI.Xaml.Media.Animation.Timeline> global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.Media.Animation.Timeline>.GetEnumerator()
-		{
-			return (global::System.Collections.Generic.IEnumerator<global::Windows.UI.Xaml.Media.Animation.Timeline>)global::McgInterop.McgHelpers.GetGenericEnumerator(
-								this, 
-								typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.Media.Animation.Timeline>).TypeHandle
-							);
-		}
-
-		global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator()
-		{
-			return global::McgInterop.McgHelpers.GetNonGenericEnumerator(this);
-		}
-
-		public TimelineCollection(global::System.IntPtr dummy)
-		{
-		}
-	}
-
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IList<global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame>))]
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame>))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class ObjectKeyFrameCollection : global::System.__ComObject, global::System.Collections.Generic.IList<global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame>, global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame>, global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame>
-	{
-		int global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame>.Count
-		{
-			get
-			{
-				return global::System.Collections.Generic.IList_A_Windows_UI_Xaml_Media_Animation_ObjectKeyFrame_V___Impl.ICollectionRCWAdapterClass.Count(this);
-			}
-		}
-
-		bool global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame>.IsReadOnly
-		{
-			get
-			{
-				return global::System.Collections.Generic.IList_A_Windows_UI_Xaml_Media_Animation_ObjectKeyFrame_V___Impl.ICollectionRCWAdapterClass.IsReadOnly(this);
-			}
-		}
-
-		void global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame>.Add(global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame item)
-		{
-			global::System.Collections.Generic.IList_A_Windows_UI_Xaml_Media_Animation_ObjectKeyFrame_V___Impl.ICollectionRCWAdapterClass.Add(
-								this, 
-								item
-							);
-		}
-
-		void global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame>.Clear()
-		{
-			global::System.Collections.Generic.IList_A_Windows_UI_Xaml_Media_Animation_ObjectKeyFrame_V___Impl.ICollectionRCWAdapterClass.Clear(this);
-		}
-
-		bool global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame>.Contains(global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame item)
-		{
-			return global::System.Collections.Generic.IList_A_Windows_UI_Xaml_Media_Animation_ObjectKeyFrame_V___Impl.ICollectionRCWAdapterClass.Contains(
-								this, 
-								item
-							);
-		}
-
-		void global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame>.CopyTo(
-					global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame[] array, 
-					int arrayindex)
-		{
-			global::System.Collections.Generic.IList_A_Windows_UI_Xaml_Media_Animation_ObjectKeyFrame_V___Impl.ICollectionRCWAdapterClass.CopyTo(
-								this, 
-								array, 
-								arrayindex
-							);
-		}
-
-		bool global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame>.Remove(global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame item)
-		{
-			return global::System.Collections.Generic.IList_A_Windows_UI_Xaml_Media_Animation_ObjectKeyFrame_V___Impl.ICollectionRCWAdapterClass.Remove(
-								this, 
-								item
-							);
-		}
-
-		global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame global::System.Collections.Generic.IList<global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame>.this[int index]
-		{
-			get
-			{
-				return global::System.Collections.Generic.IList_A_Windows_UI_Xaml_Media_Animation_ObjectKeyFrame_V___Impl.RCWAdapterClass.Indexer_Get(
-									this, 
-									index
-								);
-			}
-			set
-			{
-				global::System.Collections.Generic.IList_A_Windows_UI_Xaml_Media_Animation_ObjectKeyFrame_V___Impl.RCWAdapterClass.Indexer_Set(
-									this, 
-									index, 
-									value
-								);
-			}
-		}
-
-		int global::System.Collections.Generic.IList<global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame>.IndexOf(global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame item)
-		{
-			return global::System.Collections.Generic.IList_A_Windows_UI_Xaml_Media_Animation_ObjectKeyFrame_V___Impl.RCWAdapterClass.IndexOf(
-								this, 
-								item
-							);
-		}
-
-		void global::System.Collections.Generic.IList<global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame>.Insert(
-					int index, 
-					global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame item)
-		{
-			global::System.Collections.Generic.IList_A_Windows_UI_Xaml_Media_Animation_ObjectKeyFrame_V___Impl.RCWAdapterClass.Insert(
-								this, 
-								index, 
-								item
-							);
-		}
-
-		void global::System.Collections.Generic.IList<global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame>.RemoveAt(int index)
-		{
-			global::System.Collections.Generic.IList_A_Windows_UI_Xaml_Media_Animation_ObjectKeyFrame_V___Impl.RCWAdapterClass.RemoveAt(
-								this, 
-								index
-							);
-		}
-
-		global::System.Collections.Generic.IEnumerator<global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame> global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame>.GetEnumerator()
-		{
-			return (global::System.Collections.Generic.IEnumerator<global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame>)global::McgInterop.McgHelpers.GetGenericEnumerator(
-								this, 
-								typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame>).TypeHandle
-							);
-		}
-
-		global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator()
-		{
-			return global::McgInterop.McgHelpers.GetNonGenericEnumerator(this);
-		}
-
-		public ObjectKeyFrameCollection(global::System.IntPtr dummy)
-		{
-		}
-	}
-
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Media.Animation.IObjectKeyFrame))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe class ObjectKeyFrame : global::Windows.UI.Xaml.DependencyObject, global::Windows.UI.Xaml.Media.Animation.IObjectKeyFrame
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Value")]
-		public virtual object get_Value()
-		{
-			object __retVal = global::Windows.UI.Xaml.Media.Animation.IObjectKeyFrame__Impl.StubClass.get_Value(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Value")]
-		public virtual void put_Value(object value)
-		{
-			global::Windows.UI.Xaml.Media.Animation.IObjectKeyFrame__Impl.StubClass.put_Value(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "KeyTime")]
-		public virtual global::Windows.UI.Xaml.Media.Animation.KeyTime get_KeyTime()
-		{
-			global::Windows.UI.Xaml.Media.Animation.KeyTime __retVal = global::Windows.UI.Xaml.Media.Animation.IObjectKeyFrame__Impl.StubClass.get_KeyTime(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "KeyTime")]
-		public virtual void put_KeyTime(global::Windows.UI.Xaml.Media.Animation.KeyTime value)
-		{
-			global::Windows.UI.Xaml.Media.Animation.IObjectKeyFrame__Impl.StubClass.put_KeyTime(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		public ObjectKeyFrame(global::System.IntPtr dummy) : 
-				base(dummy)
-		{
-		}
-	}
-
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Media.Animation.IObjectAnimationUsingKeyFrames))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class ObjectAnimationUsingKeyFrames : global::Windows.UI.Xaml.Media.Animation.Timeline, global::Windows.UI.Xaml.Media.Animation.IObjectAnimationUsingKeyFrames
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
-		public ObjectAnimationUsingKeyFrames() : 
-				base(default(global::System.IntPtr))
-		{
-			global::System.IntPtr retval;
-			retval = global::System.Runtime.InteropServices.McgModuleManager.ActivateInstance("Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames");
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			this.__AttachAndRelease(retval);
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "KeyFrames")]
-		public global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrameCollection get_KeyFrames()
-		{
-			global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrameCollection __retVal = global::Windows.UI.Xaml.Media.Animation.IObjectAnimationUsingKeyFrames__Impl.StubClass.get_KeyFrames(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		public ObjectAnimationUsingKeyFrames(global::System.IntPtr dummy) : 
-				base(dummy)
-		{
-		}
-	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class DiscreteObjectKeyFrame : global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame, global::Windows.UI.Xaml.Media.Animation.IDiscreteObjectKeyFrame
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
-		public DiscreteObjectKeyFrame() : 
-				base(default(global::System.IntPtr))
-		{
-			global::System.IntPtr retval;
-			retval = global::System.Runtime.InteropServices.McgModuleManager.ActivateInstance("Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame");
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			this.__AttachAndRelease(retval);
-		}
-
-		public DiscreteObjectKeyFrame(global::System.IntPtr dummy) : 
-				base(dummy)
-		{
-		}
-	}
-
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Media.Animation.IDoubleAnimation))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class DoubleAnimation : global::Windows.UI.Xaml.Media.Animation.Timeline, global::Windows.UI.Xaml.Media.Animation.IDoubleAnimation
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
-		public DoubleAnimation() : 
-				base(default(global::System.IntPtr))
-		{
-			global::System.IntPtr retval;
-			retval = global::System.Runtime.InteropServices.McgModuleManager.ActivateInstance("Windows.UI.Xaml.Media.Animation.DoubleAnimation");
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			this.__AttachAndRelease(retval);
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "To")]
-		public global::System.Nullable<double> get_To()
-		{
-			global::System.Nullable<double> __retVal = global::Windows.UI.Xaml.Media.Animation.IDoubleAnimation__Impl.StubClass.get_To(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "To")]
-		public void put_To(global::System.Nullable<double> value)
-		{
-			global::Windows.UI.Xaml.Media.Animation.IDoubleAnimation__Impl.StubClass.put_To(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		public DoubleAnimation(global::System.IntPtr dummy) : 
-				base(dummy)
-		{
-		}
-	}
-
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
@@ -23034,106 +20681,6 @@ namespace Windows.UI.Xaml.Media.Animation
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface ITransition
 	{
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface ITimeline
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Duration")]
-		global::Windows.UI.Xaml.Duration get_Duration();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Duration")]
-		void put_Duration(global::Windows.UI.Xaml.Duration value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "Completed")]
-		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_Completed(global::System.EventHandler<object> value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "Completed")]
-		void remove_Completed(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IStoryboardStatics
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		string GetTargetProperty(global::Windows.UI.Xaml.Media.Animation.Timeline element);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void SetTargetProperty(
-					global::Windows.UI.Xaml.Media.Animation.Timeline element, 
-					string path);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		string GetTargetName(global::Windows.UI.Xaml.Media.Animation.Timeline element);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void SetTargetName(
-					global::Windows.UI.Xaml.Media.Animation.Timeline element, 
-					string name);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IStoryboard
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Children")]
-		global::Windows.UI.Xaml.Media.Animation.TimelineCollection get_Children();
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IObjectKeyFrame
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Value")]
-		object get_Value();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Value")]
-		void put_Value(object value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "KeyTime")]
-		global::Windows.UI.Xaml.Media.Animation.KeyTime get_KeyTime();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "KeyTime")]
-		void put_KeyTime(global::Windows.UI.Xaml.Media.Animation.KeyTime value);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IObjectAnimationUsingKeyFrames
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "KeyFrames")]
-		global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrameCollection get_KeyFrames();
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IDiscreteObjectKeyFrame
-	{
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IDoubleAnimation
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "To")]
-		global::System.Nullable<double> get_To();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "To")]
-		void put_To(global::System.Nullable<double> value);
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -23481,166 +21028,6 @@ namespace Windows.UI.Xaml.Navigation
 		Back = 1,
 		Forward = 2,
 		Refresh = 3,
-	}
-}
-
-namespace Windows.UI.Xaml.Shapes
-{
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Shapes.IShape))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe class Shape : global::Windows.UI.Xaml.FrameworkElement, global::Windows.UI.Xaml.Shapes.IShape
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Stroke")]
-		public virtual global::Windows.UI.Xaml.Media.Brush get_Stroke()
-		{
-			global::Windows.UI.Xaml.Media.Brush __retVal = global::Windows.UI.Xaml.Shapes.IShape__Impl.StubClass.get_Stroke(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Stroke")]
-		public virtual void put_Stroke(global::Windows.UI.Xaml.Media.Brush value)
-		{
-			global::Windows.UI.Xaml.Shapes.IShape__Impl.StubClass.put_Stroke(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "StrokeEndLineCap")]
-		public virtual global::Windows.UI.Xaml.Media.PenLineCap get_StrokeEndLineCap()
-		{
-			global::Windows.UI.Xaml.Media.PenLineCap __retVal = global::Windows.UI.Xaml.Shapes.IShape__Impl.StubClass.get_StrokeEndLineCap(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "StrokeEndLineCap")]
-		public virtual void put_StrokeEndLineCap(global::Windows.UI.Xaml.Media.PenLineCap value)
-		{
-			global::Windows.UI.Xaml.Shapes.IShape__Impl.StubClass.put_StrokeEndLineCap(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "StrokeDashOffset")]
-		public virtual double get_StrokeDashOffset()
-		{
-			double __retVal = global::Windows.UI.Xaml.Shapes.IShape__Impl.StubClass.get_StrokeDashOffset(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "StrokeDashOffset")]
-		public virtual void put_StrokeDashOffset(double value)
-		{
-			global::Windows.UI.Xaml.Shapes.IShape__Impl.StubClass.put_StrokeDashOffset(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "StrokeDashArray")]
-		public virtual global::Windows.UI.Xaml.Media.DoubleCollection get_StrokeDashArray()
-		{
-			global::Windows.UI.Xaml.Media.DoubleCollection __retVal = global::Windows.UI.Xaml.Shapes.IShape__Impl.StubClass.get_StrokeDashArray(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "StrokeDashArray")]
-		public virtual void put_StrokeDashArray(global::Windows.UI.Xaml.Media.DoubleCollection value)
-		{
-			global::Windows.UI.Xaml.Shapes.IShape__Impl.StubClass.put_StrokeDashArray(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		public Shape(global::System.IntPtr dummy) : 
-				base(dummy)
-		{
-		}
-	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class Rectangle : global::Windows.UI.Xaml.Shapes.Shape, global::Windows.UI.Xaml.Shapes.IRectangle
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
-		public Rectangle() : 
-				base(default(global::System.IntPtr))
-		{
-			global::System.IntPtr retval;
-			retval = global::System.Runtime.InteropServices.McgModuleManager.ActivateInstance("Windows.UI.Xaml.Shapes.Rectangle");
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			this.__AttachAndRelease(retval);
-		}
-
-		public Rectangle(global::System.IntPtr dummy) : 
-				base(dummy)
-		{
-		}
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IShape
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Stroke")]
-		global::Windows.UI.Xaml.Media.Brush get_Stroke();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Stroke")]
-		void put_Stroke(global::Windows.UI.Xaml.Media.Brush value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "StrokeEndLineCap")]
-		global::Windows.UI.Xaml.Media.PenLineCap get_StrokeEndLineCap();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "StrokeEndLineCap")]
-		void put_StrokeEndLineCap(global::Windows.UI.Xaml.Media.PenLineCap value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "StrokeDashOffset")]
-		double get_StrokeDashOffset();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "StrokeDashOffset")]
-		void put_StrokeDashOffset(double value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "StrokeDashArray")]
-		global::Windows.UI.Xaml.Media.DoubleCollection get_StrokeDashArray();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "StrokeDashArray")]
-		void put_StrokeDashArray(global::Windows.UI.Xaml.Media.DoubleCollection value);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IRectangle
-	{
 	}
 }
 

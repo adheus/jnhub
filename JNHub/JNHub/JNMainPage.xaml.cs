@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Foundation.Metadata;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -23,15 +24,28 @@ namespace JNHub
     /// </summary>
     public sealed partial class JNMainPage : Page
     {
+
+       
         public JNMainPage()
         {
             this.InitializeComponent();
-            Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().TitleBar.BackgroundColor = Windows.UI.Colors.DarkCyan;
-            Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().TitleBar.ButtonBackgroundColor = Windows.UI.Colors.DarkCyan;
-            
+            var statusBarColor = Windows.UI.Color.FromArgb(255,2,120,120);
+            Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().TitleBar.BackgroundColor = statusBarColor;
+            Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().TitleBar.ButtonBackgroundColor = statusBarColor;
            
+            if (ApiInformation.IsTypePresent("Windows.UI.ViewManagement.StatusBar"))
+            {
+                
+                Windows.UI.ViewManagement.StatusBar.GetForCurrentView().BackgroundColor = statusBarColor;
+                Windows.UI.ViewManagement.StatusBar.GetForCurrentView().BackgroundOpacity = 1;
+                Windows.UI.ViewManagement.StatusBar.GetForCurrentView().ForegroundColor = Windows.UI.Colors.White;
+            }
+
+
             Window.Current.SizeChanged += Current_SizeChanged;
             Current_SizeChanged(null, null);
+
+            this.setSelectedButton(this.HomeButton);
             setFeed(JNRSSReader.GetCurrentMainFeed());
         }
 
@@ -82,6 +96,7 @@ namespace JNHub
         {
             this.CategoryName.Text = "NERDCAST";
             this.MySplitView.IsPaneOpen = false;
+            this.setSelectedButton((Button)sender);
             setFeed(JNRSSReader.GetNerdcastFeed());
         }
 
@@ -89,6 +104,7 @@ namespace JNHub
         {
             this.CategoryName.Text = "NERDOFFICE";
             this.MySplitView.IsPaneOpen = false;
+            this.setSelectedButton((Button)sender);
             setFeed(JNRSSReader.GetNerdOfficeFeed());
         }
 
@@ -96,6 +112,7 @@ namespace JNHub
         {
             this.CategoryName.Text = "NERDPLAYER";
             this.MySplitView.IsPaneOpen = false;
+            this.setSelectedButton((Button)sender);
             setFeed(JNRSSReader.GetNerdPlayerFeed());
         }
 
@@ -103,6 +120,7 @@ namespace JNHub
         {
             this.CategoryName.Text = "MATANDO ROBÔS GIGANTES";
             this.MySplitView.IsPaneOpen = false;
+            this.setSelectedButton((Button)sender);
             setFeed(JNRSSReader.GetMRGsFeed());
         }
 
@@ -110,6 +128,7 @@ namespace JNHub
         {
             this.CategoryName.Text = "INÍCIO";
             this.MySplitView.IsPaneOpen = false;
+            this.setSelectedButton((Button)sender);
             setFeed(JNRSSReader.GetMainFeed());
         }
 
@@ -117,6 +136,23 @@ namespace JNHub
         {
             this.MySplitView.IsPaneOpen = false;
             this.Frame.Navigate(typeof(Pages.AboutPage));
+        }
+
+        private void setSelectedButton(Button selectedButton)
+        {
+            var color = Windows.UI.Colors.DarkCyan;
+            color.A = 160;
+            var buttons = new List<Button> { this.HomeButton, this.NerdcastButton, this.NerdofficeButton, this.NerdplayerButton, this.MRGButton, this.AboutButton };
+            foreach(Button b in buttons)
+            {
+                if (b == selectedButton)
+                {
+                    b.Background = new SolidColorBrush(color);
+                } else
+                {
+                    b.Background = new SolidColorBrush(Windows.UI.Colors.Transparent);
+                }
+            }
         }
     }
 }

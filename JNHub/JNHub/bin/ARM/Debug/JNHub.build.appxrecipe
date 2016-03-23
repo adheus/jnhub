@@ -9,16 +9,16 @@
     <SolutionConfiguration>Debug|ARM</SolutionConfiguration>
     <PackageArchitecture>arm</PackageArchitecture>
     <PackageIdentityName>640014d5-8664-4cac-b371-7de732b701d6</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\obj\ARM\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\obj\ARM\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\bin\ARM\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\bin\ARM\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\bin\ARM\Debug\JNHub.exe">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\bin\ARM\Debug\JNHub.exe">
       <PackagePath>entrypoint\JNHub.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Adheus\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
@@ -345,115 +345,115 @@
     <AppxPackagedFile Include="C:\Users\Adheus\.nuget\packages\YoutubeExtractor\0.10.10\lib\portable-net45+win8+wpa81+wp8\YoutubeExtractor.dll">
       <PackagePath>YoutubeExtractor.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\ApplicationInsights.config">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\Assets\about_bg.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\Assets\about_bg.png">
       <PackagePath>Assets\about_bg.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\Assets\adheus_logo.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\Assets\adheus_logo.png">
       <PackagePath>Assets\adheus_logo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\Assets\Square310x310Logo.scale-100.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\Assets\Square310x310Logo.scale-100.png">
       <PackagePath>Assets\Square310x310Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\Assets\Square310x310Logo.scale-200.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\Assets\Square310x310Logo.scale-200.png">
       <PackagePath>Assets\Square310x310Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\Assets\Square310x310Logo.scale-400.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\Assets\Square310x310Logo.scale-400.png">
       <PackagePath>Assets\Square310x310Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\Assets\Square71x71Logo.scale-100.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\Assets\Square71x71Logo.scale-100.png">
       <PackagePath>Assets\Square71x71Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\Assets\Square71x71Logo.scale-200.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\Assets\Square71x71Logo.scale-200.png">
       <PackagePath>Assets\Square71x71Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\Assets\Square71x71Logo.scale-400.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\Assets\Square71x71Logo.scale-400.png">
       <PackagePath>Assets\Square71x71Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\Assets\StoreLogo.scale-150.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\Assets\StoreLogo.scale-150.png">
       <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\Assets\StoreLogo.scale-200.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\Assets\StoreLogo.scale-200.png">
       <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\Assets\StoreLogo.scale-400.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\bin\ARM\Debug\JNHub.xr.xml">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\bin\ARM\Debug\JNHub.xr.xml">
       <PackagePath>JNHub.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\bin\ARM\Debug\resources.pri">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\bin\ARM\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\bin\ARM\Debug\Core\JNHub.exe">
+    <AppxPackagedFile Include="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\bin\ARM\Debug\Core\JNHub.exe">
       <PackagePath>JNHub.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

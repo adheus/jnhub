@@ -22,8 +22,8 @@ namespace JNHub.Utils
 
             wait = new ProgressRing();
             wait.Foreground = new SolidColorBrush(Windows.UI.Color.FromArgb(255, 0, 161, 169));
-            wait.MinWidth = 80;
-            wait.MinHeight = 80;
+            wait.MinWidth = 60;
+            wait.MinHeight = 60;
             label = new TextBlock();
             label.Margin = new Thickness(0, 50, 0, 0);
             label.HorizontalAlignment = HorizontalAlignment.Center;

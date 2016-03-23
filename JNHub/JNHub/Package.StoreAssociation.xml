@@ -364,23 +364,5 @@
     </ReservedNames>
   </ProductReservedInfo>
   <AccountPackageIdentityNames />
-  <PackageInfoList LandingUrl="https://dev.windows.com/dashboard/Application?appId=9NBLGGGZLT98">
-    <BundleInfo>
-      <PackageInfo>
-        <OsMinVersion>6.3.0.0</OsMinVersion>
-        <PackageArchitecture>Neutral</PackageArchitecture>
-        <PackageMaxArchitectureVersion>1.1.1.1</PackageMaxArchitectureVersion>
-      </PackageInfo>
-      <PackageInfo>
-        <OsMinVersion>6.3.0.0</OsMinVersion>
-        <PackageArchitecture>Neutral</PackageArchitecture>
-        <PackageMaxArchitectureVersion>1.1.1.1</PackageMaxArchitectureVersion>
-      </PackageInfo>
-      <PackageInfo>
-        <OsMinVersion>6.3.0.0</OsMinVersion>
-        <PackageArchitecture>Neutral</PackageArchitecture>
-        <PackageMaxArchitectureVersion>1.1.1.1</PackageMaxArchitectureVersion>
-      </PackageInfo>
-    </BundleInfo>
-  </PackageInfoList>
+  <PackageInfoList LandingUrl="https://dev.windows.com/dashboard/Application?appId=9NBLGGGZLT98" />
 </StoreAssociation>

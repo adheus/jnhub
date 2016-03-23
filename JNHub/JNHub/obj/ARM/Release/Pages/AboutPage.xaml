@@ -36,7 +36,7 @@
                     <Button x:ConnectionId='6' x:Name="HamburgerButton"  Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
                      Width="48" Height="48" Foreground="White" Background="DarkCyan" FontFamily="Segoe MDL2 Assets" FontSize="22" FontWeight="SemiLight" Content="&#xE830;"/>
                     <Grid VerticalAlignment="Center" Margin="10,0,0,0">
-                        <TextBlock x:ConnectionId='7' x:Name="pageTitle" Text="SOBRE" FontWeight="SemiBold" FontSize="18" />
+                        <TextBlock x:ConnectionId='7' x:Name="pageTitle" Text="Sobre" FontWeight="SemiBold" FontSize="18" />
                     </Grid>
                 </StackPanel>
                 <Grid Grid.Row="1">
@@ -46,7 +46,7 @@
                     <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="40,0,40,0">
                         <Image Source="../Assets/adheus_logo.png" />
                    
-                        <TextBlock Text="versão 1.2.0" TextAlignment="Center" Margin="0,30,0,40" Foreground="#EEE"/>
+                        <TextBlock Text="versão 1.2.1" TextAlignment="Center" Margin="0,30,0,40" Foreground="#EEE"/>
                         <Button x:ConnectionId='4' Content="termos de uso" HorizontalAlignment="Center" Foreground="#EEE"                         />
                         <Button x:ConnectionId='5' Content="www.adheus.com" Margin="0,40,0,40" HorizontalAlignment="Center" Foreground="#EEE"                 />
                     </StackPanel>

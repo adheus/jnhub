@@ -132,49 +132,47 @@ namespace JNHub.JNHub_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[20];
+            _typeNameTable = new string[19];
             _typeNameTable[0] = "JNHub.JNMainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "JNHub.Utils.SectionItemTemplateSelector";
-            _typeNameTable[4] = "Windows.UI.Xaml.Controls.DataTemplateSelector";
-            _typeNameTable[5] = "Windows.UI.Xaml.DataTemplate";
-            _typeNameTable[6] = "JNHub.Utils.VariableSizeGridView";
-            _typeNameTable[7] = "Windows.UI.Xaml.Controls.GridView";
-            _typeNameTable[8] = "Windows.UI.Xaml.Controls.ItemsControl";
-            _typeNameTable[9] = "JNHub.MainPage";
-            _typeNameTable[10] = "JNHub.Pages.AboutPage";
-            _typeNameTable[11] = "JNHub.Common.ObservableDictionary";
-            _typeNameTable[12] = "Object";
-            _typeNameTable[13] = "String";
-            _typeNameTable[14] = "JNHub.Common.NavigationHelper";
-            _typeNameTable[15] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[16] = "JNHub.Pages.CategoryPage";
-            _typeNameTable[17] = "JNHub.Pages.PodcastPage";
-            _typeNameTable[18] = "JNHub.Pages.VideoPage";
-            _typeNameTable[19] = "JNHub.Pages.WebViewPage";
+            _typeNameTable[3] = "JNHub.Pages.AboutPage";
+            _typeNameTable[4] = "JNHub.Common.ObservableDictionary";
+            _typeNameTable[5] = "Object";
+            _typeNameTable[6] = "String";
+            _typeNameTable[7] = "JNHub.Common.NavigationHelper";
+            _typeNameTable[8] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[9] = "JNHub.Utils.SectionItemTemplateSelector";
+            _typeNameTable[10] = "Windows.UI.Xaml.Controls.DataTemplateSelector";
+            _typeNameTable[11] = "Windows.UI.Xaml.DataTemplate";
+            _typeNameTable[12] = "JNHub.Utils.VariableSizeGridView";
+            _typeNameTable[13] = "Windows.UI.Xaml.Controls.GridView";
+            _typeNameTable[14] = "Windows.UI.Xaml.Controls.ItemsControl";
+            _typeNameTable[15] = "JNHub.Pages.CategoryPage";
+            _typeNameTable[16] = "JNHub.Pages.PodcastPage";
+            _typeNameTable[17] = "JNHub.Pages.VideoPage";
+            _typeNameTable[18] = "JNHub.Pages.WebViewPage";
 
-            _typeTable = new global::System.Type[20];
+            _typeTable = new global::System.Type[19];
             _typeTable[0] = typeof(global::JNHub.JNMainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::JNHub.Utils.SectionItemTemplateSelector);
-            _typeTable[4] = typeof(global::Windows.UI.Xaml.Controls.DataTemplateSelector);
-            _typeTable[5] = typeof(global::Windows.UI.Xaml.DataTemplate);
-            _typeTable[6] = typeof(global::JNHub.Utils.VariableSizeGridView);
-            _typeTable[7] = typeof(global::Windows.UI.Xaml.Controls.GridView);
-            _typeTable[8] = typeof(global::Windows.UI.Xaml.Controls.ItemsControl);
-            _typeTable[9] = typeof(global::JNHub.MainPage);
-            _typeTable[10] = typeof(global::JNHub.Pages.AboutPage);
-            _typeTable[11] = typeof(global::JNHub.Common.ObservableDictionary);
-            _typeTable[12] = typeof(global::System.Object);
-            _typeTable[13] = typeof(global::System.String);
-            _typeTable[14] = typeof(global::JNHub.Common.NavigationHelper);
-            _typeTable[15] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[16] = typeof(global::JNHub.Pages.CategoryPage);
-            _typeTable[17] = typeof(global::JNHub.Pages.PodcastPage);
-            _typeTable[18] = typeof(global::JNHub.Pages.VideoPage);
-            _typeTable[19] = typeof(global::JNHub.Pages.WebViewPage);
+            _typeTable[3] = typeof(global::JNHub.Pages.AboutPage);
+            _typeTable[4] = typeof(global::JNHub.Common.ObservableDictionary);
+            _typeTable[5] = typeof(global::System.Object);
+            _typeTable[6] = typeof(global::System.String);
+            _typeTable[7] = typeof(global::JNHub.Common.NavigationHelper);
+            _typeTable[8] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[9] = typeof(global::JNHub.Utils.SectionItemTemplateSelector);
+            _typeTable[10] = typeof(global::Windows.UI.Xaml.Controls.DataTemplateSelector);
+            _typeTable[11] = typeof(global::Windows.UI.Xaml.DataTemplate);
+            _typeTable[12] = typeof(global::JNHub.Utils.VariableSizeGridView);
+            _typeTable[13] = typeof(global::Windows.UI.Xaml.Controls.GridView);
+            _typeTable[14] = typeof(global::Windows.UI.Xaml.Controls.ItemsControl);
+            _typeTable[15] = typeof(global::JNHub.Pages.CategoryPage);
+            _typeTable[16] = typeof(global::JNHub.Pages.PodcastPage);
+            _typeTable[17] = typeof(global::JNHub.Pages.VideoPage);
+            _typeTable[18] = typeof(global::JNHub.Pages.WebViewPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -210,16 +208,15 @@ namespace JNHub.JNHub_XamlTypeInfo
         }
 
         private object Activate_0_JNMainPage() { return new global::JNHub.JNMainPage(); }
-        private object Activate_3_SectionItemTemplateSelector() { return new global::JNHub.Utils.SectionItemTemplateSelector(); }
-        private object Activate_6_VariableSizeGridView() { return new global::JNHub.Utils.VariableSizeGridView(); }
-        private object Activate_9_MainPage() { return new global::JNHub.MainPage(); }
-        private object Activate_10_AboutPage() { return new global::JNHub.Pages.AboutPage(); }
-        private object Activate_11_ObservableDictionary() { return new global::JNHub.Common.ObservableDictionary(); }
-        private object Activate_16_CategoryPage() { return new global::JNHub.Pages.CategoryPage(); }
-        private object Activate_17_PodcastPage() { return new global::JNHub.Pages.PodcastPage(); }
-        private object Activate_18_VideoPage() { return new global::JNHub.Pages.VideoPage(); }
-        private object Activate_19_WebViewPage() { return new global::JNHub.Pages.WebViewPage(); }
-        private void MapAdd_11_ObservableDictionary(object instance, object key, object item)
+        private object Activate_3_AboutPage() { return new global::JNHub.Pages.AboutPage(); }
+        private object Activate_4_ObservableDictionary() { return new global::JNHub.Common.ObservableDictionary(); }
+        private object Activate_9_SectionItemTemplateSelector() { return new global::JNHub.Utils.SectionItemTemplateSelector(); }
+        private object Activate_12_VariableSizeGridView() { return new global::JNHub.Utils.VariableSizeGridView(); }
+        private object Activate_15_CategoryPage() { return new global::JNHub.Pages.CategoryPage(); }
+        private object Activate_16_PodcastPage() { return new global::JNHub.Pages.PodcastPage(); }
+        private object Activate_17_VideoPage() { return new global::JNHub.Pages.VideoPage(); }
+        private object Activate_18_WebViewPage() { return new global::JNHub.Pages.WebViewPage(); }
+        private void MapAdd_4_ObservableDictionary(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
             var newKey = (global::System.String)key;
@@ -252,111 +249,104 @@ namespace JNHub.JNHub_XamlTypeInfo
                 xamlType = new global::JNHub.JNHub_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  JNHub.Utils.SectionItemTemplateSelector
-                userType = new global::JNHub.JNHub_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.DataTemplateSelector"));
-                userType.Activator = Activate_3_SectionItemTemplateSelector;
-                userType.AddMemberName("SectionHeadlineItemTemplate");
-                userType.AddMemberName("SectionItemTemplate");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 4:   //  Windows.UI.Xaml.Controls.DataTemplateSelector
-                xamlType = new global::JNHub.JNHub_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 5:   //  Windows.UI.Xaml.DataTemplate
-                xamlType = new global::JNHub.JNHub_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 6:   //  JNHub.Utils.VariableSizeGridView
-                userType = new global::JNHub.JNHub_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.GridView"));
-                userType.Activator = Activate_6_VariableSizeGridView;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 7:   //  Windows.UI.Xaml.Controls.GridView
-                xamlType = new global::JNHub.JNHub_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 8:   //  Windows.UI.Xaml.Controls.ItemsControl
-                xamlType = new global::JNHub.JNHub_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 9:   //  JNHub.MainPage
+            case 3:   //  JNHub.Pages.AboutPage
                 userType = new global::JNHub.JNHub_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_MainPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 10:   //  JNHub.Pages.AboutPage
-                userType = new global::JNHub.JNHub_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_10_AboutPage;
+                userType.Activator = Activate_3_AboutPage;
                 userType.AddMemberName("DefaultViewModel");
                 userType.AddMemberName("NavigationHelper");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 11:   //  JNHub.Common.ObservableDictionary
+            case 4:   //  JNHub.Common.ObservableDictionary
                 userType = new global::JNHub.JNHub_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.DictionaryAdd = MapAdd_11_ObservableDictionary;
+                userType.DictionaryAdd = MapAdd_4_ObservableDictionary;
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 12:   //  Object
+            case 5:   //  Object
                 xamlType = new global::JNHub.JNHub_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 13:   //  String
+            case 6:   //  String
                 xamlType = new global::JNHub.JNHub_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 14:   //  JNHub.Common.NavigationHelper
+            case 7:   //  JNHub.Common.NavigationHelper
                 userType = new global::JNHub.JNHub_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 15:   //  Windows.UI.Xaml.DependencyObject
+            case 8:   //  Windows.UI.Xaml.DependencyObject
                 xamlType = new global::JNHub.JNHub_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 16:   //  JNHub.Pages.CategoryPage
+            case 9:   //  JNHub.Utils.SectionItemTemplateSelector
+                userType = new global::JNHub.JNHub_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.DataTemplateSelector"));
+                userType.Activator = Activate_9_SectionItemTemplateSelector;
+                userType.AddMemberName("SectionHeadlineItemTemplate");
+                userType.AddMemberName("SectionItemTemplate");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 10:   //  Windows.UI.Xaml.Controls.DataTemplateSelector
+                xamlType = new global::JNHub.JNHub_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 11:   //  Windows.UI.Xaml.DataTemplate
+                xamlType = new global::JNHub.JNHub_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 12:   //  JNHub.Utils.VariableSizeGridView
+                userType = new global::JNHub.JNHub_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.GridView"));
+                userType.Activator = Activate_12_VariableSizeGridView;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 13:   //  Windows.UI.Xaml.Controls.GridView
+                xamlType = new global::JNHub.JNHub_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 14:   //  Windows.UI.Xaml.Controls.ItemsControl
+                xamlType = new global::JNHub.JNHub_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 15:   //  JNHub.Pages.CategoryPage
                 userType = new global::JNHub.JNHub_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_16_CategoryPage;
+                userType.Activator = Activate_15_CategoryPage;
                 userType.AddMemberName("DefaultViewModel");
                 userType.AddMemberName("NavigationHelper");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 17:   //  JNHub.Pages.PodcastPage
+            case 16:   //  JNHub.Pages.PodcastPage
                 userType = new global::JNHub.JNHub_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_17_PodcastPage;
+                userType.Activator = Activate_16_PodcastPage;
                 userType.AddMemberName("DefaultViewModel");
                 userType.AddMemberName("NavigationHelper");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 18:   //  JNHub.Pages.VideoPage
+            case 17:   //  JNHub.Pages.VideoPage
                 userType = new global::JNHub.JNHub_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_18_VideoPage;
+                userType.Activator = Activate_17_VideoPage;
                 userType.AddMemberName("DefaultViewModel");
                 userType.AddMemberName("NavigationHelper");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 19:   //  JNHub.Pages.WebViewPage
+            case 18:   //  JNHub.Pages.WebViewPage
                 userType = new global::JNHub.JNHub_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_19_WebViewPage;
+                userType.Activator = Activate_18_WebViewPage;
                 userType.AddMemberName("DefaultViewModel");
                 userType.AddMemberName("NavigationHelper");
                 userType.SetIsLocalType();
@@ -367,35 +357,35 @@ namespace JNHub.JNHub_XamlTypeInfo
         }
 
 
-        private object get_0_SectionItemTemplateSelector_SectionHeadlineItemTemplate(object instance)
-        {
-            var that = (global::JNHub.Utils.SectionItemTemplateSelector)instance;
-            return that.SectionHeadlineItemTemplate;
-        }
-        private void set_0_SectionItemTemplateSelector_SectionHeadlineItemTemplate(object instance, object Value)
-        {
-            var that = (global::JNHub.Utils.SectionItemTemplateSelector)instance;
-            that.SectionHeadlineItemTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_1_SectionItemTemplateSelector_SectionItemTemplate(object instance)
-        {
-            var that = (global::JNHub.Utils.SectionItemTemplateSelector)instance;
-            return that.SectionItemTemplate;
-        }
-        private void set_1_SectionItemTemplateSelector_SectionItemTemplate(object instance, object Value)
-        {
-            var that = (global::JNHub.Utils.SectionItemTemplateSelector)instance;
-            that.SectionItemTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_2_AboutPage_DefaultViewModel(object instance)
+        private object get_0_AboutPage_DefaultViewModel(object instance)
         {
             var that = (global::JNHub.Pages.AboutPage)instance;
             return that.DefaultViewModel;
         }
-        private object get_3_AboutPage_NavigationHelper(object instance)
+        private object get_1_AboutPage_NavigationHelper(object instance)
         {
             var that = (global::JNHub.Pages.AboutPage)instance;
             return that.NavigationHelper;
+        }
+        private object get_2_SectionItemTemplateSelector_SectionHeadlineItemTemplate(object instance)
+        {
+            var that = (global::JNHub.Utils.SectionItemTemplateSelector)instance;
+            return that.SectionHeadlineItemTemplate;
+        }
+        private void set_2_SectionItemTemplateSelector_SectionHeadlineItemTemplate(object instance, object Value)
+        {
+            var that = (global::JNHub.Utils.SectionItemTemplateSelector)instance;
+            that.SectionHeadlineItemTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_3_SectionItemTemplateSelector_SectionItemTemplate(object instance)
+        {
+            var that = (global::JNHub.Utils.SectionItemTemplateSelector)instance;
+            return that.SectionItemTemplate;
+        }
+        private void set_3_SectionItemTemplateSelector_SectionItemTemplate(object instance, object Value)
+        {
+            var that = (global::JNHub.Utils.SectionItemTemplateSelector)instance;
+            that.SectionItemTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
         private object get_4_CategoryPage_DefaultViewModel(object instance)
         {
@@ -445,29 +435,29 @@ namespace JNHub.JNHub_XamlTypeInfo
 
             switch (longMemberName)
             {
-            case "JNHub.Utils.SectionItemTemplateSelector.SectionHeadlineItemTemplate":
-                userType = (global::JNHub.JNHub_XamlTypeInfo.XamlUserType)GetXamlTypeByName("JNHub.Utils.SectionItemTemplateSelector");
-                xamlMember = new global::JNHub.JNHub_XamlTypeInfo.XamlMember(this, "SectionHeadlineItemTemplate", "Windows.UI.Xaml.DataTemplate");
-                xamlMember.Getter = get_0_SectionItemTemplateSelector_SectionHeadlineItemTemplate;
-                xamlMember.Setter = set_0_SectionItemTemplateSelector_SectionHeadlineItemTemplate;
-                break;
-            case "JNHub.Utils.SectionItemTemplateSelector.SectionItemTemplate":
-                userType = (global::JNHub.JNHub_XamlTypeInfo.XamlUserType)GetXamlTypeByName("JNHub.Utils.SectionItemTemplateSelector");
-                xamlMember = new global::JNHub.JNHub_XamlTypeInfo.XamlMember(this, "SectionItemTemplate", "Windows.UI.Xaml.DataTemplate");
-                xamlMember.Getter = get_1_SectionItemTemplateSelector_SectionItemTemplate;
-                xamlMember.Setter = set_1_SectionItemTemplateSelector_SectionItemTemplate;
-                break;
             case "JNHub.Pages.AboutPage.DefaultViewModel":
                 userType = (global::JNHub.JNHub_XamlTypeInfo.XamlUserType)GetXamlTypeByName("JNHub.Pages.AboutPage");
                 xamlMember = new global::JNHub.JNHub_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "JNHub.Common.ObservableDictionary");
-                xamlMember.Getter = get_2_AboutPage_DefaultViewModel;
+                xamlMember.Getter = get_0_AboutPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "JNHub.Pages.AboutPage.NavigationHelper":
                 userType = (global::JNHub.JNHub_XamlTypeInfo.XamlUserType)GetXamlTypeByName("JNHub.Pages.AboutPage");
                 xamlMember = new global::JNHub.JNHub_XamlTypeInfo.XamlMember(this, "NavigationHelper", "JNHub.Common.NavigationHelper");
-                xamlMember.Getter = get_3_AboutPage_NavigationHelper;
+                xamlMember.Getter = get_1_AboutPage_NavigationHelper;
                 xamlMember.SetIsReadOnly();
+                break;
+            case "JNHub.Utils.SectionItemTemplateSelector.SectionHeadlineItemTemplate":
+                userType = (global::JNHub.JNHub_XamlTypeInfo.XamlUserType)GetXamlTypeByName("JNHub.Utils.SectionItemTemplateSelector");
+                xamlMember = new global::JNHub.JNHub_XamlTypeInfo.XamlMember(this, "SectionHeadlineItemTemplate", "Windows.UI.Xaml.DataTemplate");
+                xamlMember.Getter = get_2_SectionItemTemplateSelector_SectionHeadlineItemTemplate;
+                xamlMember.Setter = set_2_SectionItemTemplateSelector_SectionHeadlineItemTemplate;
+                break;
+            case "JNHub.Utils.SectionItemTemplateSelector.SectionItemTemplate":
+                userType = (global::JNHub.JNHub_XamlTypeInfo.XamlUserType)GetXamlTypeByName("JNHub.Utils.SectionItemTemplateSelector");
+                xamlMember = new global::JNHub.JNHub_XamlTypeInfo.XamlMember(this, "SectionItemTemplate", "Windows.UI.Xaml.DataTemplate");
+                xamlMember.Getter = get_3_SectionItemTemplateSelector_SectionItemTemplate;
+                xamlMember.Setter = set_3_SectionItemTemplateSelector_SectionItemTemplate;
                 break;
             case "JNHub.Pages.CategoryPage.DefaultViewModel":
                 userType = (global::JNHub.JNHub_XamlTypeInfo.XamlUserType)GetXamlTypeByName("JNHub.Pages.CategoryPage");

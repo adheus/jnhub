@@ -6,10 +6,10 @@
 "/nativelink:C:\Program Files (x86)\MSBuild\Microsoft\.NetNative\ARM\ilc\lib\Native\vmath.lib"
 /customImports
 /methodBodyFolding
-"C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\obj\ARM\Release\ilc\intermediate\MDIL\JNHub.mdilexe"
-"/i:C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\obj\ARM\Release\ilc\intermediate\MDIL\"
-/out:"C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\obj\ARM\Release\ilc\intermediate\Native\JNHub.exe"
-"/res:C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\obj\ARM\Release\ilc\intermediate\Native.res"
+"Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\obj\ARM\Release\ilc\intermediate\MDIL\JNHub.mdilexe"
+"/i:Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\obj\ARM\Release\ilc\intermediate\MDIL\"
+/out:"Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\obj\ARM\Release\ilc\intermediate\Native\JNHub.exe"
+"/res:Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\obj\ARM\Release\ilc\intermediate\Native.res"
 "/i:C:\Program Files (x86)\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Framework.1.2\1.2\ARM\ret\MDIL"
 /shimexe
 /classlib:SharedLibrary

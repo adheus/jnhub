@@ -1,2 +1,2 @@
-MainPackage=C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\bin\x64\Release\Upload\JNHub_1.2.0.0_x64.appx
-SymbolPackage=C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\AppPackages\JNHub_1.2.0.0\JNHub_1.2.0.0_x64.appxsym
+MainPackage=Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\bin\x64\Release\Upload\JNHub_1.2.1.0_x64.appx
+SymbolPackage=Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\AppPackages\JNHub_1.2.1.0\JNHub_1.2.1.0_x64.appxsym

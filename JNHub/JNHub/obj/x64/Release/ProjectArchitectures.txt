@@ -1,1 +1,1 @@
-C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\JNHub.csproj;x64
+Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\JNHub.csproj;x64

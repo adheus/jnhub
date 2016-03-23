@@ -1,5 +1,5 @@
-MainPackage=C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\bin\ARM\Release\Upload\JNHub_1.2.0.0_ARM.appx
-SymbolPackage=C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\AppPackages\JNHub_1.2.0.0\JNHub_1.2.0.0_ARM.appxsym
-ResourcePack=C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\_scale-100.appx
-ResourcePack=C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\_scale-150.appx
-ResourcePack=C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\_scale-400.appx
+MainPackage=Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\bin\ARM\Release\Upload\JNHub_1.2.1.0_ARM.appx
+SymbolPackage=Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\AppPackages\JNHub_1.2.1.0\JNHub_1.2.1.0_ARM.appxsym
+ResourcePack=Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\_scale-100.appx
+ResourcePack=Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\_scale-150.appx
+ResourcePack=Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\_scale-400.appx

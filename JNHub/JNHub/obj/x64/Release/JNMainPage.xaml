@@ -2,7 +2,7 @@
      x:Class="JNHub.JNMainPage"
      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-     xmlns:local="using:App1"
+     xmlns:local="using:JNHub"
      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
      mc:Ignorable="d" 
@@ -17,7 +17,7 @@
             <Button x:ConnectionId='10' x:Name="HamburgerButton"
                      Width="48" Height="48" Foreground="White" Background="DarkCyan" FontFamily="Segoe MDL2 Assets" FontSize="22" FontWeight="SemiLight" Content="&#xE700;"                              />
             <Grid VerticalAlignment="Center" Margin="10,0,0,0">
-                <TextBlock x:ConnectionId='11' x:Name="CategoryName" Text="INÍCIO" FontWeight="SemiBold" FontSize="18" />
+                <TextBlock x:ConnectionId='11' x:Name="CategoryName" Text="INÍCIO" FontWeight="SemiBold" FontSize="16" />
             </Grid>
         </StackPanel>
         <SplitView x:ConnectionId='1' x:Name="MySplitView" Grid.Row="1" DisplayMode="CompactOverlay"  IsPaneOpen="False" 

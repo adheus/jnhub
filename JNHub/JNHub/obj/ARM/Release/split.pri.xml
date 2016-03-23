@@ -27,11 +27,6 @@
 					<Base64Value>[Embedded Binary Data]</Base64Value>
 				</Candidate>
 			</NamedResource>
-			<NamedResource name="MainPage.xbf" uri="ms-resource://55857Adheus.JovemNerdHub/Files/MainPage.xbf">
-				<Candidate type="EmbeddedData">
-					<Base64Value>[Embedded Binary Data]</Base64Value>
-				</Candidate>
-			</NamedResource>
 			<ResourceMapSubtree name="Assets">
 				<NamedResource name="about_bg.png" uri="ms-resource://55857Adheus.JovemNerdHub/Files/Assets/about_bg.png">
 					<Candidate type="Path">

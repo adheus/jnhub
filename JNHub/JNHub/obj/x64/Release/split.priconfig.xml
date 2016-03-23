@@ -5,7 +5,7 @@
     <autoResourcePackage qualifier="Scale" />
     <autoResourcePackage qualifier="DXFeatureLevel" />
   </packaging>
-  <index root="\" startIndexAt="C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\bin\x64\Release\ilc\resources.pri">
+  <index root="\" startIndexAt="Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub\bin\x64\Release\ilc\resources.pri">
     <default>
       <qualifier name="Language" value="pt-BR" />
       <qualifier name="Contrast" value="standard" />

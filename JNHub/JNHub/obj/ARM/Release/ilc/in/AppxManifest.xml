@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="55857Adheus.JovemNerdHub" Publisher="CN=F580CD61-BBA0-4015-A0D5-52539F200158" Version="1.2.0.0" ProcessorArchitecture="arm" />
+  <Identity Name="55857Adheus.JovemNerdHub" Publisher="CN=F580CD61-BBA0-4015-A0D5-52539F200158" Version="1.2.1.0" ProcessorArchitecture="arm" />
   <mp:PhoneIdentity PhoneProductId="640014d5-8664-4cac-b371-7de732b701d6" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Jovem Nerd Hub</DisplayName>
@@ -47,6 +47,7 @@
     <build:Item Name="OptimizingToolset" Value="ilc.exe" />
     <build:Item Name="UseDotNetNativeSharedAssemblyFrameworkPackage" Value="true" />
     <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="14.0.24720.0" />
+    <build:Item Name="WindowsMobile" Version="10.0.10586.0" />
     <build:Item Name="MakePri.exe" Version="10.0.10586.15 (th2_release.151119-1817)" />
   </build:Metadata>
 </Package>
