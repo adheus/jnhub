@@ -1,4 +1,0 @@
-MainPackage=Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\bin\Release\JNHub.Windows_1.1.1.1_AnyCPU.appx
-SymbolPackage=Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\AppPackages\JNHub.Windows_1.1.1.1_Test\JNHub.Windows_1.1.1.1_AnyCPU.appxsym
-ResourcePack=Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\bin\Release\JNHub.Windows_1.1.1.1_scale-140.appx
-ResourcePack=Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\bin\Release\JNHub.Windows_1.1.1.1_scale-180.appx

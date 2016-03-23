@@ -1,8 +1,0 @@
-﻿[ResourceMetadata]
-"ResourceId"			"split.scale-180"
-"ResourceDimensions"		"scale-180"
-
-[Files]
-"Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\obj\Release\split.scale-180.pri"			"resources.pri"
-"Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\obj\Release\PackageLayout\Assets\StoreLogo.scale-180.png"			"Assets\StoreLogo.scale-180.png"
-"Z:\Projetos\Adheus\JNHub\git\jnhub\JNHub\JNHub.Windows\obj\Release\PackageLayout\Assets\Square70x70Logo.scale-180.png"			"Assets\Square70x70Logo.scale-180.png"

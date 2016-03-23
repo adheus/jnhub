@@ -1,0 +1,21 @@
+﻿[ResourceMetadata]
+"ResourceDimensions"		"scale-200"
+"ResourceDimensions"		"language-pt-br"
+
+[Files]
+"C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\obj\ARM\Release\Upload\split.pri"			"resources.pri"
+"C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\obj\ARM\Release\PackageUploadLayout\WinMetadata\Windows.winmd"			"WinMetadata\Windows.winmd"
+"C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\obj\ARM\Release\PackageUploadLayout\Properties\Default.rd.xml"			"Properties\Default.rd.xml"
+"C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\obj\ARM\Release\PackageUploadLayout\JNHub.xr.xml"			"JNHub.xr.xml"
+"C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\obj\ARM\Release\PackageUploadLayout\Assets\Wide310x150Logo.scale-200.png"			"Assets\Wide310x150Logo.scale-200.png"
+"C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\obj\ARM\Release\PackageUploadLayout\Assets\StoreLogo.scale-200.png"			"Assets\StoreLogo.scale-200.png"
+"C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\obj\ARM\Release\PackageUploadLayout\Assets\Square71x71Logo.scale-200.png"			"Assets\Square71x71Logo.scale-200.png"
+"C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\obj\ARM\Release\PackageUploadLayout\Assets\Square44x44Logo.scale-200.png"			"Assets\Square44x44Logo.scale-200.png"
+"C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\obj\ARM\Release\PackageUploadLayout\Assets\Square44x44Logo.targetsize-24_altform-unplated.png"			"Assets\Square44x44Logo.targetsize-24_altform-unplated.png"
+"C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\obj\ARM\Release\PackageUploadLayout\Assets\Square310x310Logo.scale-200.png"			"Assets\Square310x310Logo.scale-200.png"
+"C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\obj\ARM\Release\PackageUploadLayout\Assets\Square150x150Logo.scale-200.png"			"Assets\Square150x150Logo.scale-200.png"
+"C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\obj\ARM\Release\PackageUploadLayout\Assets\SplashScreen.scale-200.png"			"Assets\SplashScreen.scale-200.png"
+"C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\obj\ARM\Release\PackageUploadLayout\Assets\LockScreenLogo.scale-200.png"			"Assets\LockScreenLogo.scale-200.png"
+"C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\obj\ARM\Release\PackageUploadLayout\Assets\adheus_logo.png"			"Assets\adheus_logo.png"
+"C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\obj\ARM\Release\PackageUploadLayout\Assets\about_bg.png"			"Assets\about_bg.png"
+"C:\Users\Adheus\Documents\Visual Studio 2015\Projects\JNHub\JNHub\obj\ARM\Release\PackageUploadLayout\ApplicationInsights.config"			"ApplicationInsights.config"
